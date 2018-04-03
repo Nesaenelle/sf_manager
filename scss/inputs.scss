@@ -1,0 +1,222 @@
+.input {
+    // width: 382px;
+    position: relative;
+    height: 36px;
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    margin-bottom: $c-inputs-offset;
+    &-number {
+        position: absolute;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        border-left: 1px solid #dfe3e9;
+        &-minus {
+            border-top: 1px solid #dfe3e9;
+        }
+        &-minus,
+        &-plus {
+            text-align: center;
+            height: 50%;
+            font-size: 16px;
+            color: #dfe3e9;
+            line-height: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    input[type='text'],
+    input[type='password'],
+    input[type="email"],
+    input[type="number"] {
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none; // border-color: #516173;
+            box-shadow: 0 0 0 1px #516173;
+        }
+        &.has-error {
+            box-shadow: 0 0 0 1px #ed1c24;
+            &::-webkit-input-placeholder {
+                color: #ed1c24;
+            }
+            &::-moz-placeholder {
+                color: #ed1c24;
+            }
+            /* Firefox 19+ */
+            &:-moz-placeholder {
+                color: #ed1c24;
+            }
+            /* Firefox 18- */
+            &:-ms-input-placeholder {
+                color: #ed1c24;
+            }
+        }
+        &::-webkit-input-placeholder {
+            color: #b0b0b1;
+        }
+        &::-moz-placeholder {
+            color: #b0b0b1;
+        }
+        /* Firefox 19+ */
+        &:-moz-placeholder {
+            color: #b0b0b1;
+        }
+        /* Firefox 18- */
+        &:-ms-input-placeholder {
+            color: #b0b0b1;
+        }
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    &-subtitle {
+        // position: absolute;
+        // top: 45px;
+        margin-top: 45px;
+        color: #7f8fa4;
+        font-size: 12px;
+    }
+    &-icon {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+    margin: 10px 0 15px 0;
+    color: #7f8fa4;
+    font-size: 12px;
+    cursor: pointer; // align-items: center;
+    input[type="checkbox"] {
+        display: none;
+        &:checked~.checkbox-icon {
+            background: url(img/small-checkbox.svg) center no-repeat $c-green;
+            border: solid 1px rgba(0, 0, 0, 0.1);
+        }
+        &:checked+.checkbox-label {
+            font-weight: 600;
+        }
+    }
+    .checkbox-label {
+        color: $c-text;
+        font-size: 14px;
+        margin-right: 10px;
+        width: 140px;
+    }
+    .checkbox-info {
+        width: 75%;
+    }
+    .checkbox-icon {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        background-image: linear-gradient(to top, #f2f4f7, #ffffff);
+        display: block;
+        width: 14px;
+        height: 14px;
+        box-shadow: 0 0 0px 1px #e3dddd;
+        border-radius: 3px;
+    }
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    color: #354052;
+    ;
+    font-size: 14px;
+    cursor: pointer;
+    input {
+        display: none;
+        &:checked {
+            &+.custom-checkbox-switcher {
+                background: $c-green;
+                &:after {
+                    left: 18px;
+                }
+            }
+        }
+    }
+    &-switcher {
+        background: #c5d0de;
+        border-radius: 10px;
+        width: 36px;
+        height: 20px;
+        position: relative;
+        margin-right: 10px;
+        transition: 0.3s;
+        &:after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            border-radius: 100%;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            left: 2px;
+            transition: 0.3s;
+        }
+    }
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+    border: 1px solid #dfe3e9;
+    font-size: 14px;
+    &::-webkit-input-placeholder {
+        color: #b0b0b1;
+    }
+    &::-moz-placeholder {
+        color: #b0b0b1;
+    }
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+        color: #b0b0b1;
+    }
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+        color: #b0b0b1;
+    }
+}
+
+.textarea {
+    position: relative;
+    .icon-download-grey {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 12px;
+        right: 8px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    input[type="file"] {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        text-indent: -999px;
+    }
+}

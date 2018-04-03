@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New domain</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item"><a href="websites_list.html">Websites</a></li>
+                <li class="header-menu-item"><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link  active">
+                    <a href="index.html" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="index.html">Subscriptions</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li><a href="profile_settings.html">Profile settings</a></li>
+                <li class="active"><a href="settings.html">Settings</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Profile</a></div>
+                <div class="breadcrumbs-item"><a href="settings.html">Settings</a></div>
+                <div class="breadcrumbs-item active"><a href=""> New Domain Contact</a></div>
+            </div>
+            <h1 class="main-title mt-15">Add New Domain Contact</h1>
+            <div class="notification" id="notification-1">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>Contact was created!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <form action="" id="form">
+                <div class="colx2 mt-20">
+                    <div class="col-item">
+                        <label class="label" for="">Organization of the Registrant user</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Registrant Organization Name" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Job title of the Registrant user</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Registrant Job Title" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">First name*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Adam" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Last Name*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Your last name" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Address1 of the Registrant user*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Address1" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Address2 of the Registrant user</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Address2" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">City of the Registrant user*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="City" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">State/Province of the Registrant user*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="State Province" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Country of the Registrant user*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="Country" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">PostalCode of the Registrant user*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="PostalCode" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Registrant phone*</label>
+                        <div class="input mb-15">
+                            <input required type="text" placeholder="+123.1234567890" title="Error text">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Registrant FAX</label>
+                        <div class="input mb-15">
+                            <input required type="text" pattern="^[+.0-9]+$" placeholder="+123.1234567890" title="Invalid registrant FAX">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Email</label>
+                        <div class="input mb-25">
+                            <input required type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Your@email.com" title="Email is invalid">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-light-grey" id="submit-btn" type="submit">Create contact</button> <span class="ml-5 required-fields">*required fields</span>
+            </form>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+    <script src="js/submit.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/User</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,12 C14,10.92 12.849,9.982 11.138,9.454 C10.406,10.388 9.279,11 8,11 C6.721,11 5.594,10.388 4.862,9.454 C3.151,9.982 2,10.92 2,12 L2,14 L3,14 L3.557,14 L11,14 L12,14 L12.443,14 L14,14 L14,12 Z M10,4 C10,2.895 9.105,2 8,2 C6.895,2 6,2.895 6,4 L6,7 C6,8.105 6.895,9 8,9 C9.105,9 10,8.105 10,7 L10,4 Z M15,16 L12.756,16 L3.244,16 L1,16 C0.448,16 0,15.552 0,15 L0,12 C0,10.136 1.648,8.528 4.068,7.669 C4.03,7.451 4,7.229 4,7 L4,4 C4,1.791 5.791,0 8,0 C10.209,0 12,1.791 12,4 L12,7 C12,7.229 11.97,7.451 11.932,7.669 C14.352,8.528 16,10.136 16,12 L16,15 C16,15.552 15.552,16 15,16 L15,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Person-Icon"></g>
+        <g id="UI/Color/Flat/Grey-50%" mask="url(#mask-2)" fill="#A8AAB7">
+            <rect id="Base" x="0" y="0" width="16" height="16"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,182 @@
+.dropdown {
+    position: relative;
+    border: 1px solid #dfe3e9;
+    height: 36px;
+    background-image: linear-gradient(to top, #f2f4f7, #ffffff);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    &+.subtitle {
+        margin-bottom: 15px;
+    }
+    &:after {
+        content: '';
+        border: solid #c5d0de;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-left: 5px;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        transition: 0.1s;
+    }
+    &.opened {
+        .dropdown-list {
+            display: block;
+        }
+        &:after {
+            top: 15px;
+            transform: rotate(225deg);
+        }
+    }
+    &-value {
+        display: flex;
+        color: #b0b0b1;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        height: 100%;
+        padding: 0px 10px;
+        cursor: pointer;
+        &.dirty {
+            color: #354052;
+        }
+    }
+    &-list {
+        display: none;
+        border: 1px solid #dfe3e9; // min-width: 300px;
+        width: calc(100% + 2px);
+        z-index: 999;
+        position: absolute;
+        top: 34px;
+        left: -1px;
+        background: #fff;
+        &-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #dfe3e9;
+            transition: 0.2s;
+            font-size: 14px;
+            font-weight: 600;
+            color: #354052;
+            &.selected {
+                background: #f1f4f8;
+                color: $c-green;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 20px;
+                    background: url(img/check-green.svg);
+                    width: 13px;
+                    height: 12px;
+                }
+            }
+            &:hover {
+                background: #dfe3e9;
+            }
+            &:last-child {
+                border: none;
+            }
+            &.new-server {
+                color: #b0b0b1;
+                font-size: 14px;
+                font-weight: 400;
+                border-top: 1px solid #e2e7ee;
+                &:hover{
+                    background: initial;
+                }
+            }
+        }
+    }
+}
+
+
+.js-more-btn {
+    &.opened {
+        .more-btn-value {
+            &:after {
+                transform: rotate(225deg);
+                top: 0px;
+            }
+        }
+        .table-dropdown {
+            display: block;
+        }
+    }
+}
+
+.table-dropdown {
+    display: none;
+    border: 1px solid #dfe3e9; // min-width: 300px;
+    width: 200px;
+    z-index: 999;
+    position: absolute;
+    top: 34px; // left: -1px;
+    background: #fff;
+    .sub-menu-toggle {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            border: solid #273142;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+            transform: rotate(45deg);
+            right: 10px;
+            position: absolute;
+            top: 15px;
+        }
+    }
+    &-item {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #dfe3e9;
+        transition: 0.2s;
+        color: #354052;
+        font-weight: 600;
+        font-size: 14px;
+        &:hover {
+            background: #dfe3e9;
+        }
+        &:last-child {
+            border: none;
+        }
+
+        &.opened {
+            &:after {
+                transform: rotate(225deg);
+                top: 17px;
+            }
+            &+.table-dropdown-sub {
+                display: block;
+            }
+        }
+    }
+    &-sub {
+        padding: 10px 30px;
+        display: none;
+        background: #f6f6f6;
+        border-bottom: 1px solid #dfe3e9;
+        .checkbox-label {
+            font-weight: normal;
+        }
+    }
+    &-create-group {
+        border-top: 1px solid #dfe3e9;
+        padding: 10px;
+        .input {
+            display: none;
+        }
+        &.opened {
+            background: #f6f6f6;
+            .input {
+                display: block;
+            }
+        }
+    }
+}

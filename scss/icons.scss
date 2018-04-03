@@ -1,0 +1,119 @@
+.icon {
+    display: inline-block;
+    &-white {
+        border-color: #fff!important;
+    }
+    &-info {
+        background: url(img/info.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        min-width: 16px;
+    }
+    &-search {
+        background: url(img/search.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-search-green {
+        background: url(img/search-green.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    &-check-circle-green {
+        background: url(img/check_circle-green.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-check-circle {
+        background: url(img/check_circle.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-check-circle-white {
+        background: url(img/check_circle_white.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-down-arrow {
+        border: solid $c-green;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-left: 5px;
+        position: relative;
+        top: -3px;
+        &.white {
+            border-color: #fff;
+        }
+    }
+    &-up-arrow {
+        border: solid $c-green;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        margin-left: 5px;
+        position: relative;
+        top: 0px;
+    }
+    &-fb {
+        background: url(img/Facebook.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-g-plus {
+        background: url(img/G+.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        color: #fff;
+    }
+    &-circle-red {
+        background: url(img/+circle-red.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-preloader {
+        background-image: url(img/inst.gif);
+        background-size: cover!important;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    &-download {
+        background-image: url(img/download.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-download-grey {
+        background-image: url(img/download-grey.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-download-white {
+        background-image: url(img/download-white.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-plus {
+        background-image: url(img/plus_circle.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}

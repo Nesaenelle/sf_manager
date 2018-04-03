@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spin rewriter settings</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item"><a href="websites_list.html">Websites</a></li>
+                <li class="header-menu-item"><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link  active">
+                    <a href="index.html" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="index.html">Subscriptions</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li><a href="profile_settings.html">Profile settings</a></li>
+                <li class="active"><a href="settings.html">Settings</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Profile</a></div>
+                <div class="breadcrumbs-item"><a href="settings.html">Settings</a></div>
+                <div class="breadcrumbs-item active"><a href="">SpinRewriter setting</a></div>
+            </div>
+            <h1 class="main-title mt-15">SpinRewriter Settings</h1>
+            <div class="notification" id="notification-1">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>SpinRewriter settings updated successfully!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <form class="mt-20" action="" id="form">
+                <div class="colx2">
+                    <div class="col-item width-55">
+                        <label class="label" for="">Email</label>
+                        <div class="input mb-15">
+                            <input required type="email" placeholder="Enter your SpinWriter login email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="example@gmail.com">
+                        </div>
+                        <label class="label" for="">API key</label>
+                        <div class="input mb-15">
+                            <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="Enter here..." title="Invalid API key">
+                        </div>
+                        <label class="label" for="">Confidence Level </label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Low</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">Low</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex">
+                            <i class="icon icon-info"></i>
+                            <div>
+                                Low: largest number of synonyms for various words and phrases, least readable unique variations of text
+                                <br>
+                                <span class="green">Medium</span>: relatively reliable synonyms, usually well readable unique variations of text (default setting)
+                                <br>
+                                <span class="green">High</span>: only the most reliable synonyms, perfectly readable unique variations of text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-30">
+                    <label class="checkbox" for="checkbox-1">
+                        <input id="checkbox-1" value="1" type="checkbox"><span class="checkbox-label">Nested</span> <span class="checkbox-info">If checked, the returned spun text might contain 2 levels of nested spinning syntax.</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox" for="checkbox-2">
+                        <input id="checkbox-2" value="2" type="checkbox"><span class="checkbox-label">Sentence</span> <span class="checkbox-info">If checked, some sentences will be replaced with a (shorter) spun variation</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox" for="checkbox-3">
+                        <input id="checkbox-3" value="3" type="checkbox"><span class="checkbox-label">Paragraph</span> <span class="checkbox-info">If checked, some paragraphs will be replaced with a (shorter) spun variation.</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox" for="checkbox-4">
+                        <input id="checkbox-4" value="4" type="checkbox"><span class="checkbox-label">Add New Paragrpahs</span> <span class="checkbox-info">If enabled, the returned spun text will contain additional paragraphs.</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox" for="checkbox-5">
+                        <input id="checkbox-5" value="5" type="checkbox"><span class="checkbox-label">Change Structure</span> <span class="checkbox-info">If enabled, Spin Rewriter will change "If he is hungry, John eats." to "John eats if he is hungry." and "John eats and drinks." to "John drinks and eats."</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox" for="checkbox-6">
+                        <input id="checkbox-6" value="6" type="checkbox"><span class="checkbox-label">Use Only Synonyms</span> <span class="checkbox-info">If enabled, Spin Rewriter will never use any of the original words of phrases if there is a synonym available. 
+This significantly improves the uniqueness of generated spun content.</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                    <label class="checkbox mt-25" for="checkbox-7">
+                        <input id="checkbox-7" value="7" type="checkbox"><span class="checkbox-label">Capitalized</span> <span class="checkbox-info">If checked, some sentences will be replaced with a (shorter) spun variation</span>
+                        <i class="checkbox-icon"></i>
+                    </label>
+                </div>
+                <div class="colx2 mt-25">
+                    <div class="col-item width-55">
+                        <label class="label" for="">Protected</label>
+                        <div class="input">
+                            <input required type="text" placeholder="Enter here...">
+                            <div class="input-subtitle small-text flex a-i-c"><i class="icon icon-info"></i>Comma-separated protected words (do not put spaces inbetween the words)</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-green mt-10" type="submit">Save settings</button>
+            </form>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+
+    <script src="js/submit.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+
+</html>

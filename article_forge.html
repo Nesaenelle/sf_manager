@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Article force settings</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item"><a href="">Websites</a></li>
+                <li class="header-menu-item"><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link  active">
+                    <a href="" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="index.html">Subscriptions</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li><a href="profile_settings.html">Profile settings</a></li>
+                <li class="active"><a href="settings.html">Settings</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Profile</a></div>
+                <div class="breadcrumbs-item"><a href="">Settings</a></div>
+                <div class="breadcrumbs-item active"><a href="">Articleforge settings</a></div>
+            </div>
+            <h1 class="main-title mt-15">ArticleForge Settings</h1>
+            <div class="notification" id="notification-1">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>ArticleForge settings updated successfully!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <form class="mt-20" action="" id="form">
+                <div class="colx2">
+                    <div class="col-item full-width">
+                        <label class="label" for="">API key</label>
+                        <div class="input mb-20 width-75">
+                            <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="Enter here..." title="Invalid API key">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Sentence Variation</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">1</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> Number of sentence variations. It can be either 1, 2, or 3</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Paragraph Variation</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">1</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> Number of sentence variations. It can be either 1, 2, or 3</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Length of the article</label>
+                        <div class="dropdown mb-0">
+                            <div class="dropdown-value dirty">Disabled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Shuffle Paragraphs</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Appoximately 50 words</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> Enable shuffle paragraphs or not</div>
+                    </div>
+                    <div class="col-item" style="    margin-top: -20px;">
+                        <label class="label" for="">Title</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i>If it is set to be disabled, the article generated is without titles and headings</div>
+                        <label class="label" for="">Image</label>
+                        <div class="input">
+                            <input required type="text" placeholder="0.00">
+                            <div class="input-subtitle small-text flex a-i-c"><i class="icon icon-info"></i>the probability of adding an image into the article. It should be a float number from 0.00 to 1.00</div>
+                        </div>
+                        <label class="label" for="">Video</label>
+                        <div class="input">
+                            <input required type="text" placeholder="0.00">
+                            <div class="input-subtitle small-text flex a-i-c"><i class="icon icon-info"></i>the probability of adding a video into the article. It should be a float number from 0.00 to 1.00.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-block">The following parameters are only available when your account is linked to valid WordAi API key. You can go to this URL (https://af.articleforge.com/users/edit) to update your WordAi API key. Overwrite any of these parameters without a valid WordAi API key linked to your account will get an error.</div>
+                <div class="colx2">
+                    <div class="col-item">
+                        <label class="label" for="">Quality</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> the quality of article</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Reqular spinner</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> Enable regular spinner or not</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Rewrite_sentence</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i> Enable sentences rewrite or not</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Turing spinner</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i>Enable turing spinner or not</div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Rearrange_sentence</label>
+                        <div class="dropdown">
+                            <div class="dropdown-value dirty">Disibled</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">1</div>
+                                <div class="dropdown-list-item">2</div>
+                                <div class="dropdown-list-item">3</div>
+                            </div>
+                        </div>
+                        <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i>Enable add/remove/rearrange sentences or not</div>
+                    </div>
+                </div>
+                <button class="mt-15 btn btn-green" type="submit">Save settings</button>
+            </form>
+        </div>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+    <script src="js/dropdown.js"></script>
+    <script src="js/submit.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+
+</html>

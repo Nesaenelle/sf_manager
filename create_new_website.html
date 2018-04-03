@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Websites List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item active"><a href="websites_list.html">Websites</a></li>
+                <li class="header-menu-item "><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link">
+                    <a href="index.html" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="websites_list.html">Websites List</a></li>
+                <li class="active"><a href="create_new_website.html">Create New Website</a></li>
+                <li><a href="wp_destribution.html">WP Destributions</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Websites</a></div>
+                <div class="breadcrumbs-item active"><a href="">Create New Website</a></div>
+            </div>
+            <h1 class="main-title mt-15">Create a New Website</h1>
+            <div class="notification" id="notification-1">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>New site was created!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <form class="mt-20" action="" id="form">
+                <div class="colx2">
+                    <div class="col-item">
+                        <label class="label" for="">Domain name</label>
+                        <div class="input mb-15" id="input">
+                            <input required type="text" placeholder="Type here..." pattern="(https?:\/\/[^\s]+)" title="Invalid domain name">
+                        </div>
+                        <div id="textarea" class="textarea hidden mb-15">
+                            <textarea required class="full-width" placeholder="Type with commas or drop list here"></textarea>
+                            <i class="icon icon-download-grey"><input type="file"></i>
+                            <div class="subtitle small-text flex a-i-c"><i class="icon icon-info"></i>By Default using registered user password. But You can entered any password</div>
+                        </div>
+                    </div>
+                    <div class="col-item mt-30 width-50">
+                        <label id="custom-checkbox" class="custom-checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="custom-checkbox-switcher" for="custom-checkbox"></div>
+                            <span>Multi-install more domain names</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="colx2">
+                    <div class="col-item width-55">
+                        <label class="label" for="">Server</label>
+                        <div class="dropdown mb-15">
+                            <div class="dropdown-value">Selected server here</div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-list-item">Server_TEST_1</div>
+                                <div class="dropdown-list-item">Server_Work_1</div>
+                                <div class="dropdown-list-item">Server_John_33764</div>
+                                <a href="new_hosting.html">
+                                    <div class="dropdown-list-item new-server">Create a New Server</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hidden" id="extra-fields">
+                            <label class="label" for="">Group</label>
+                            <div class="dropdown mb-15">
+                                <div class="dropdown-value">Selected group here</div>
+                                <div class="dropdown-list">
+                                    <div class="dropdown-list-item">Group 1</div>
+                                    <div class="dropdown-list-item">Group 2</div>
+                                    <div class="dropdown-list-item">Group 3</div>
+                                    <div id="js-menu-toggle" class="dropdown-list-item new-server">Create a New Group</div>
+                                    <div class="input mb-10 mt-10 ml-10 mr-10 hidden">
+                                        <input type="text" placeholder="type here">
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="label" for="">WP Login</label>
+                            <div class="input mb-10" id="input">
+                                <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="admin" title="Invalid login">
+                            </div>
+                            <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>By Default using registered user password. But You can entered any password</div>
+                            <label class="label" for="">WP Password</label>
+                            <div class="input mb-10" id="input">
+                                <input required type="password" pattern="^[A-Za-z0-9]+$" placeholder="admin" title="Invalid password">
+                            </div>
+                            <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>We genereted passwords for all new WP-sites and send you email with registered list after creating process</div>
+                            <label class="label" for="">WP email</label>
+                            <div class="input mb-10" id="input">
+                                <input required type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Your@email.com" title="Email is invalid">
+                            </div>
+                            <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>By Default using registered user password. But You can entered any password</div>
+                            <label class="label" for="">WP title</label>
+                            <div id="textarea" class="textarea mb-15">
+                                <textarea required class="full-width" placeholder="Type with commas or drop list here"></textarea>
+                                <i class="icon icon-download-grey"><input type="file"></i>
+                                <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>We genereted Titles for new websites with domain's names by default</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span id="form-more-btn" class="pointer more-btn-value  small-text green">More</span>
+                            <!-- <i class="icon icon-down-arrow"></i> -->
+                            <span class="text small-text ml-30">More options for creating a new website</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="text small-text">Click on button and your WordPress site will be generated</span>
+                            <button id="submit-btn" class="btn btn-light-grey mt-10 ml-20" type="submit">Create Website</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+    <script src="js/submit.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/create-new-website.js"></script>
+</body>
+
+</html>

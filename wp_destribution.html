@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Websites List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item active"><a href="websites_list.html">Websites</a></li>
+                <li class="header-menu-item "><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link">
+                    <a href="index.html" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="websites_list.html">Websites List</a></li>
+                <li><a href="create_new_website.html">Create New Website</a></li>
+                <li class="active"><a href="wp_destribution.html">WP Destributions</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Websites</a></div>
+                <div class="breadcrumbs-item active"><a href="">WP Destributions</a></div>
+            </div>
+            <h1 class="main-title">WP Destributions</h1>
+            <div class="input search-input mb-15 width-60">
+                <input type="text" placeholder="Search by URL">
+                <i class="input-icon icon icon-search"></i>
+            </div>
+            <div class="table table-col-6 servers-list full-width">
+                <div class="table-head">
+                    <div class="table-head-col">Website Name</div>
+                    <div class="table-head-col width-15">Date and Time </div>
+                    <div class="table-head-col">Operations</div>
+                </div>
+                <div class="table-body">
+                    <div class="table-body-row">
+                        <div class="table-body-col light-text">Empty</div>
+                        <div class="table-body-col"></div>
+                        <div class="table-body-col"></div>
+                    </div>
+                </div>
+                <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
+            </div>
+            <a href="add_new_destribution.html">
+                <button class="btn btn-green mt-15">Add New Destribution</button>
+            </a>
+        </div>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+    <script src="js/more-switcher.js"></script>
+</body>
+
+</html>

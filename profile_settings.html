@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile settings</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400, 500, 600,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="a-i-c j-c-s-b">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <nav class="flex">
+            <ul class="header-menu flex">
+                <li class="header-menu-item"><a href="websites_list.html">Websites</a></li>
+                <li class="header-menu-item"><a href="servers_list.html">Servers</a></li>
+                <li class="header-menu-item"><a href="">Downloads</a></li>
+                <li class="header-menu-item profile-link  active">
+                    <a href="index.html" class="flex a-i-c">
+                        <div class="header-menu-avatar"></div>
+                        <div class="pl-55">Your@email.com</div>
+                    </a>
+                </li>
+                <li class="header-menu-item logout">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <aside>
+            <ul>
+                <li><a href="index.html">Subscriptions</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li class="active"><a href="profile_settings.html">Profile settings</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-item"><a href="">Home</a></div>
+                <div class="breadcrumbs-item"><a href="">Profile</a></div>
+                <div class="breadcrumbs-item active"><a href="">Profile settings</a></div>
+            </div>
+            <h1 class="main-title mt-15">Personal settings</h1>
+            <div class="notification" id="notification-1">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>Profile updated successfully!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <div class="notification" id="notification-2">
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>Password updated successfully!</span>
+                <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+            </div>
+            <form class="mt-20" id="form">
+                <div class="colx2">
+                    <div class="col-item">
+                        <label class="label" for="">First name</label>
+                        <div class="input mb-20">
+                            <input required type="text" pattern="^[A-Za-z]+$" placeholder="Your Name" title="Error">
+                        </div>
+
+                        <label class="label" for="">Email</label>
+                        <div class="input mb-20">
+                            <input required type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Your@email.com" title="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-item">
+                        <label class="label" for="">Last Name</label>
+                        <div class="input mb-10">
+                            <input required type="text" pattern="^[A-Za-z]+$" placeholder="Your last name" title="Error">
+                        </div>
+                        <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>Optional</div>
+                    </div>
+                </div>
+                <div class="colx2 a-i-c" id="password-readonly">
+                    <div class="col-item">
+                        <label class="label" for="">Password</label>
+                        <div class="input mb-20">
+                            <input readonly type="password" placeholder="*************">
+                            <i class="input-icon icon icon-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="col-item mt-15 mb-15">
+                        <button class="btn btn-green" type="button" id="change-password-btn" style="padding: 8px 14px">Change Password</button>
+                    </div>
+                </div>
+                <div class="full-width mb-10 change-password-form" id="change-password-form">
+                    <div class="notification error" id="notification-3">
+                        <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i><span class="notification-error-value"></span></span>
+                        <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
+                    </div>
+                    <div class=" colx2 ">
+                        <div class="col-item">
+                            <label class="label" for="">Old Password</label>
+                            <div class="input mb-10">
+                                <input type="password" id="password-control"   pattern="^[A-Za-z0-9]+$" placeholder="************" title="Invalid old password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colx2">
+                        <div class="col-item">
+                            <label class="label" for="">New Password</label>
+                            <div class="input mb-10">
+                                <input type="password" id="new-password-control"   pattern="^[A-Za-z0-9]+$" placeholder="************" title="Invalid new password">
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <label class="label" for="">New Password Again</label>
+                            <div class="input mb-10">
+                                <input type="password" id="new-password-repeat"   pattern="^[A-Za-z0-9]+$" placeholder="************" title="Invalid password confirm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-width">
+                        <button class="btn btn-green" type="button" id="password-btn">Save password</button>
+                    </div>
+                </div>
+                <div class="col-item width-75">
+                    <label class="label" for="">Time zone</label>
+                    <div class="dropdown mb-30">
+                        <div class="dropdown-value">Select here</div>
+                        <div class="dropdown-list">
+                            <div class="dropdown-list-item">1</div>
+                            <div class="dropdown-list-item">2</div>
+                            <div class="dropdown-list-item">3</div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="main-title mt-15">Login with Social Networks</h1>
+                <p class="label">Connect your account with social networks for the easier login</p>
+                <div class="mt-10 mb-35">
+                    <button class="btn btn-dark-grey inline-flex a-i-c" type="button"><i class="icon mr-10 icon-fb"></i>Connect Facebook</button>
+                    <button class="btn btn-dark-grey inline-flex  a-i-c ml-20" type="button"><i class="icon mr-10 icon-g-plus"></i>Connect Google</button>
+                </div>
+                <p class="label">Affiliate link</p>
+                <div class="banner-block">
+                    <p>Help us to grow our project. Use this link if you would like to refer people to us and resell our products. We pay 10% commission from each sale after 35 days period from the sale. Cookies on visitor machine will be stored for 1 year.</p>
+                    <div class="banner-block-buttons flex a-i-c mt-20">
+                        <div class="banner-block-link">https://goo.gl/n9NqT9</div>
+                        <button class="btn btn-middle btn-light-grey ml-10 mr-25" id="copy-link" type="button">Copy link</button>
+                    </div>
+                </div>
+                <button class="btn btn-green mt-15" type="submit">Save settings</button>
+            </form>
+    </main>
+    <footer class="flex j-c-s-b a-i-c">
+        <div class="copyright"> © Serp.farm SiteManager, 2018</div>
+        <div class="flex footer-center a-i-c">
+            <div class="help-and-supp">Help and Support:</div>
+            <img class="ml-10 mr-5" src="img/Message.svg" alt="">
+            <a class="footer-link" href="mailto:support@serp.farm">support@serp.farm</a>
+        </div>
+        <div class="flex footer-socials">
+            <img src="img/Vimeo.svg" alt="">
+            <img src="img/Twitter.svg" alt="">
+            <img src="img/Facebook.svg" alt="">
+        </div>
+    </footer>
+    <script src="js/notifications.js"></script>
+    <script src="js/submit.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/banners.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>
