@@ -52,15 +52,15 @@
             <form class="mt-20" action="" id="form">
                 <div class="colx2">
                     <div class="col-item width-70">
-                        <label class="label" for="">Hosting name</label>
+                        <label class="label" for="">Hosting name*</label>
                         <div class="input mb-20 width-75">
                             <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="Enter here..." title="Error">
                         </div>
-                        <label class="label" for="">Host</label>
+                        <label class="label" for="">Host*</label>
                         <div class="input mb-20 width-75">
-                            <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="Enter here..." title="Error">
+                            <input required type="text" pattern="^(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})(.(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})){3}$" placeholder="Enter here..." title="Invalid host">
                         </div>
-                        <label class="label" for="">Port</label>
+                        <label class="label" for="">Port*</label>
                         <div class="input mb-20 width-50">
                             <input required type="number" min="1" placeholder="Enter here..." title="Error">
                             <div class="input-number">
@@ -68,19 +68,19 @@
                                 <div class="input-number-minus">-</div>
                             </div>
                         </div>
-                        <label class="label" for="">Username</label>
+                        <label class="label" for="">Username*</label>
                         <div class="input width-75 mb-10">
                             <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="admin" title="Error">
                         </div>
                         <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>By Default using registered user password. But You can entered any password</div>
-                        <label class="label" for="">Password</label>
+                        <label class="label" for="">Password*</label>
                         <div class="input width-75 mb-10">
-                            <input required type="password" pattern="^[A-Za-z0-9]+$" placeholder="**********" title="Error">
+                            <input required type="password" pattern="^[A-Za-z0-9@%^&*]+$" placeholder="**********" title="Error">
                         </div>
                         <div class="subtitle small-text flex a-i-c mb-10"><i class="icon icon-info"></i>By Default using registered user password. But You can entered any password</div>
                         <label class="label" for="">DNS</label>
                         <div class="input mb-20 width-75">
-                            <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="admin" title="Error">
+                            <input type="text" pattern="^[A-Za-z0-9]+$" placeholder="admin" title="Error">
                         </div>
                     </div>
                 </div>
