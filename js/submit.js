@@ -5,27 +5,45 @@
     var timeout;
     var formMoreBtn = document.querySelector('#form-more-btn');
     var extraFields = document.querySelector('#extra-fields');
+    var extraTPl;
+
+
+    addListenersToControls();
 
     if (formMoreBtn) {
+        $.ajax({
+            type: 'get',
+            url: 'tpl/create-website.tpl',
+            success: function(tpl){
+                extraTPl = tpl;
+                addListenersToControls();
+            }
+        });
         formMoreBtn.addEventListener('click', function() {
 
             if (formMoreBtn.classList.contains('opened')) {
                 formMoreBtn.classList.remove('opened');
                 formMoreBtn.innerHTML = 'More';
-                extraFields.classList.add('hidden');
+                extraFields.innerHTML = '';
             } else {
                 formMoreBtn.classList.add('opened');
                 formMoreBtn.innerHTML = 'Close';
-                extraFields.classList.remove('hidden');
+                extraFields.innerHTML = extraTPl;
+                addListenersToControls();
             }
             checkSubmitBtn();
         }, false);
     }
 
+
+    form.addEventListener('change', function(e) {
+        checkSubmitBtn();
+    });
+
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        var controls = form.querySelectorAll('input');
+        var controls = getControls(form);
         let focusState = false;
         controls.forEach(control => {
             if (control.getAttribute('required') === '' && validate(control) === false && !focusState) {
@@ -48,28 +66,23 @@
 
     }, false);
 
-    form.addEventListener('change', function(e) {
-        checkSubmitBtn();
-    });
-
-    document.querySelectorAll('input').forEach(item => {
-        item.addEventListener('input', function() {
-
-            if (validate(this)) {
-                this.setCustomValidity('');
-                this.classList.remove('has-error');
-            } else {
-                this.setCustomValidity(this.getAttribute('title'))
-                this.classList.add('has-error');
-            }
-        }, false);
-    });
+    function addListenersToControls () {
+        document.querySelectorAll('input').forEach(item => {
+            item.addEventListener('input', function() {
+                if (validate(this)) {
+                    this.setCustomValidity('');
+                    this.classList.remove('has-error');
+                } else {
+                    this.setCustomValidity(this.getAttribute('title'))
+                    this.classList.add('has-error');
+                }
+            }, false);
+        });
+    }
 
     function checkSubmitBtn() {
-        var controls = [];
+        var controls = getControls(form);
         var validLength = 0;
-        form.querySelectorAll('input[required]').forEach(function(r) { controls.push(r) });
-        form.querySelectorAll('textarea[required]').forEach(function(r) { controls.push(r) });
         controls.forEach(input => {
             if (input.validity.valid) validLength++;
         });
@@ -81,6 +94,13 @@
             submitBtn.classList.remove('btn-green');
             submitBtn.classList.add('btn-light-grey');
         }
+    }
+
+    function getControls(form) {
+        var controls = [];
+        form.querySelectorAll('input[required]').forEach(function(r) { if(r.offsetParent) controls.push(r) });
+        form.querySelectorAll('textarea[required]').forEach(function(r) { if(r.offsetParent) controls.push(r) });
+        return controls;
     }
 
     function validate(control) {

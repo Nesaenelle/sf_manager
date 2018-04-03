@@ -451,7 +451,8 @@ a {
   font-size: 14px;
   max-height: 36px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  white-space: pre; }
   .btn:focus {
     outline: none; }
   .btn-small {
@@ -628,11 +629,13 @@ main {
       background: #333f52; }
   .banner-block .more-btn {
     color: #39b54a;
-    font-size: 14px; }
+    font-size: 14px;
+    white-space: pre; }
   .banner-block .close-btn {
     display: none;
     color: #39b54a;
-    font-size: 14px; }
+    font-size: 14px;
+    white-space: pre; }
   .banner-block-buttons {
     padding: 0px 20px 0px 75px; }
   .banner-block-link {
@@ -726,12 +729,84 @@ form.sent button[type="submit"] {
   background-color: #f6f6f6;
   padding: 15px 25px; }
 
+.timezone-col {
+  width: 75%; }
+
+.search-input {
+  width: 75%; }
+
+.tablet {
+  display: none; }
+
+.namechimp-page .colx2 .col-item {
+  width: 100%; }
+
+.new-hosting-page .colx2 .col-item {
+  width: 70%; }
+
+.add-new-destribution-page form {
+  width: 50%; }
+
+.create-new-website-page .custom-checkbox-container {
+  margin-top: 30px; }
+
 /* MOBILES */
-@media screen and (max-width: 800px) {
-  .colx2 {
+@media screen and (max-width: 1024px) {
+  header .header-menu-item.profile-link.active {
+    border-bottom: none; }
+  header .header-menu .profile-link {
+    font-size: 0; }
+  .desktop {
+    display: none !important; }
+  .tablet {
     display: block; }
-    .colx2 .col-item {
-      width: 100%; } }
+  .timezone-col,
+  .search-input {
+    width: 100%; }
+  main {
+    padding: 10px 0; }
+    main .main-content {
+      width: 75%;
+      padding: 0 10px 0 20px; }
+  .change-password-form .colx2 .col-item {
+    width: 75%; }
+  .banner-block-buttons {
+    padding: 0px 20px 0px 30px; }
+  .banner-block-info {
+    padding: 20px 20px 5px 20px; }
+    .banner-block-info-code {
+      justify-content: space-between; }
+    .banner-block-info-main {
+      height: 196px; }
+      .banner-block-info-main-img {
+        height: 160px;
+        width: 160px; }
+  .spin-rewriter-page .colx2 .col-item {
+    width: 75%; }
+  .articleforce-page .colx2 .col-item {
+    width: 70%; }
+  .namechimp-page .colx2 .col-item {
+    width: 70%; }
+  .new-hosting-page .colx2 .col-item {
+    width: 100%; }
+  .table-col-7.websites-list .table-head-col:nth-child(4), .table-col-7.websites-list .table-head-col:nth-child(5), .table-col-7.websites-list .table-head-col:nth-child(6),
+  .table-col-7.websites-list .table-body-col:nth-child(4),
+  .table-col-7.websites-list .table-body-col:nth-child(5),
+  .table-col-7.websites-list .table-body-col:nth-child(6) {
+    display: none; }
+  .table-col-6.servers-list .table-head-col:nth-child(3), .table-col-6.servers-list .table-head-col:nth-child(4),
+  .table-col-6.servers-list .table-body-col:nth-child(3),
+  .table-col-6.servers-list .table-body-col:nth-child(4) {
+    display: none; }
+  .add-new-destribution-page form {
+    width: 100%; }
+  .create-new-website-page .colx2 .col-item {
+    width: 100%; }
+  .create-new-website-page .custom-checkbox-container {
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .table .export-btn {
+    top: -45px; } }
 
 .table {
   position: relative; }
@@ -755,6 +830,14 @@ form.sent button[type="submit"] {
       border-top: 1px solid #dfe2e5; }
     .table-body-row:nth-child(even) {
       background: #f1f4f8; }
+    .table-body-row.table-total {
+      background: none;
+      border: none; }
+      .table-body-row.table-total p {
+        font-size: 18px; }
+        @media screen and (max-width: 1024px) {
+          .table-body-row.table-total p {
+            font-size: 14px; } }
   .table-body-col {
     color: #354052;
     font-size: 12px; }
@@ -763,10 +846,14 @@ form.sent button[type="submit"] {
     width: 80%; }
   .table-col-2 .table-head-col:nth-child(2),
   .table-col-2 .table-body-col:nth-child(2) {
-    width: 180px;
+    min-width: 130px;
     display: flex;
-    padding-right: 50px;
     justify-content: space-between; }
+  .table-col-3 .table-head-col:nth-child(1), .table-col-3 .table-head-col:nth-child(3), .table-col-3 .table-head-col:nth-child(3),
+  .table-col-3 .table-body-col:nth-child(1),
+  .table-col-3 .table-body-col:nth-child(3),
+  .table-col-3 .table-body-col:nth-child(3) {
+    width: auto; }
   .table-col-4 .table-head-col:nth-child(1),
   .table-col-4 .table-body-col:nth-child(1) {
     width: 35%; }
@@ -778,7 +865,20 @@ form.sent button[type="submit"] {
     width: 35%; }
   .table-col-4 .table-head-col:nth-child(4),
   .table-col-4 .table-body-col:nth-child(4) {
-    width: 200px; }
+    min-width: 200px; }
+  .table-col-4.payments-history .table-head-col:nth-child(1),
+  .table-col-4.payments-history .table-body-col:nth-child(1) {
+    width: 25%; }
+  .table-col-4.payments-history .table-head-col:nth-child(2),
+  .table-col-4.payments-history .table-body-col:nth-child(2) {
+    width: 25%; }
+  .table-col-4.payments-history .table-head-col:nth-child(3),
+  .table-col-4.payments-history .table-body-col:nth-child(3) {
+    width: 25%; }
+  .table-col-4.payments-history .table-head-col:nth-child(4),
+  .table-col-4.payments-history .table-body-col:nth-child(4) {
+    width: 25%;
+    min-width: initial; }
   .table-col-5 .table-head-col:nth-child(1),
   .table-col-5 .table-body-col:nth-child(1) {
     width: 10%; }
@@ -817,30 +917,39 @@ form.sent button[type="submit"] {
     width: 15%; }
   .table-col-6 .table-head-col:nth-child(6),
   .table-col-6 .table-body-col:nth-child(6) {
-    min-width: 180px;
+    min-width: 130px;
     display: flex;
-    padding-right: 50px;
+    justify-content: space-between; }
+  .table-col-6.servers-list .table-head-col:nth-child(1),
+  .table-col-6.servers-list .table-body-col:nth-child(1) {
+    min-width: 130px; }
+  .table-col-6.servers-list .table-head-col:nth-child(6),
+  .table-col-6.servers-list .table-body-col:nth-child(6) {
+    min-width: 140px;
+    display: flex;
+    padding-right: 0px;
     justify-content: space-between; }
   .table-col-6.websites-table .table-head-col:nth-child(1),
   .table-col-6.websites-table .table-body-col:nth-child(1) {
-    width: 100px; }
+    min-width: 80px; }
   .table-col-6.websites-table .table-head-col:nth-child(2),
   .table-col-6.websites-table .table-body-col:nth-child(2) {
-    width: 20%; }
+    width: 25%;
+    min-width: 80px; }
   .table-col-6.websites-table .table-head-col:nth-child(3),
   .table-col-6.websites-table .table-body-col:nth-child(3) {
-    width: 20%; }
+    width: 20%;
+    min-width: 80px; }
   .table-col-6.websites-table .table-head-col:nth-child(4),
   .table-col-6.websites-table .table-body-col:nth-child(4) {
     width: 20%; }
   .table-col-6.websites-table .table-head-col:nth-child(5),
   .table-col-6.websites-table .table-body-col:nth-child(5) {
-    width: 5%; }
+    width: 10%; }
   .table-col-6.websites-table .table-head-col:nth-child(6),
   .table-col-6.websites-table .table-body-col:nth-child(6) {
-    width: 90px;
+    min-width: 100px;
     display: flex;
-    padding-right: 50px;
     justify-content: space-between; }
   .table-col-7 .table-head-col:nth-child(1),
   .table-col-7 .table-body-col:nth-child(1) {
@@ -865,10 +974,15 @@ form.sent button[type="submit"] {
     width: 15%; }
   .table-col-7 .table-head-col:nth-child(7),
   .table-col-7 .table-body-col:nth-child(7) {
-    min-width: 240px;
+    min-width: 200px;
     display: flex;
-    padding-right: 50px;
     justify-content: space-between; }
+  .table-col-7.websites-list .table-head-col:nth-child(2),
+  .table-col-7.websites-list .table-body-col:nth-child(2) {
+    min-width: 120px; }
+  .table-col-7.websites-list .table-head-col:nth-child(3),
+  .table-col-7.websites-list .table-body-col:nth-child(3) {
+    min-width: 100px; }
 
 .export-btn {
   position: absolute;
@@ -1224,7 +1338,8 @@ textarea {
   z-index: 999;
   position: absolute;
   top: 34px;
-  background: #fff; }
+  background: #fff;
+  right: 0; }
   .table-dropdown .sub-menu-toggle {
     position: relative; }
     .table-dropdown .sub-menu-toggle:after {
@@ -1374,4 +1489,5 @@ textarea {
     margin-right: 5px; }
 
 body {
-  font-family: Source Sans Pro; }
+  font-family: Source Sans Pro;
+  min-width: 768px; }

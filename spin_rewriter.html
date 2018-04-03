@@ -31,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <main class="flex">
+    <main class="flex spin-rewriter-page">
         <aside>
             <ul>
                 <li><a href="index.html">Subscriptions</a></li>
@@ -54,7 +54,7 @@
             </div>
             <form class="mt-20" action="" id="form">
                 <div class="colx2">
-                    <div class="col-item width-55">
+                    <div class="col-item">
                         <label class="label" for="">Email</label>
                         <div class="input mb-15">
                             <input required type="email" placeholder="Enter your SpinWriter login email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="example@gmail.com">
@@ -64,22 +64,22 @@
                             <input required type="text" pattern="^[A-Za-z0-9]+$" placeholder="Enter here..." title="Invalid API key">
                         </div>
                         <label class="label" for="">Confidence Level </label>
-                        <div class="dropdown">
+                        <div class="dropdown width-75">
                             <div class="dropdown-value dirty">Low</div>
                             <div class="dropdown-list">
                                 <div class="js-dropdown-item dropdown-list-item">Low</div>
                             </div>
                         </div>
-                        <div class="subtitle small-text flex">
-                            <i class="icon icon-info"></i>
-                            <div>
-                                Low: largest number of synonyms for various words and phrases, least readable unique variations of text
-                                <br>
-                                <span class="green">Medium</span>: relatively reliable synonyms, usually well readable unique variations of text (default setting)
-                                <br>
-                                <span class="green">High</span>: only the most reliable synonyms, perfectly readable unique variations of text
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="subtitle small-text flex">
+                    <i class="icon icon-info"></i>
+                    <div>
+                        Low: largest number of synonyms for various words and phrases, least readable unique variations of text
+                        <br>
+                        <span class="green">Medium</span>: relatively reliable synonyms, usually well readable unique variations of text (default setting)
+                        <br>
+                        <span class="green">High</span>: only the most reliable synonyms, perfectly readable unique variations of text
                     </div>
                 </div>
                 <div class="mt-30">
@@ -114,7 +114,7 @@ This significantly improves the uniqueness of generated spun content.</span>
                     </label>
                 </div>
                 <div class="colx2 mt-25">
-                    <div class="col-item width-55">
+                    <div class="col-item">
                         <label class="label" for="">Protected</label>
                         <div class="input">
                             <input required type="text" placeholder="Enter here...">
@@ -122,7 +122,7 @@ This significantly improves the uniqueness of generated spun content.</span>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-green mt-10" type="submit">Save settings</button>
+                <button class="btn btn-green mt-15 mb-15" type="submit">Save settings</button>
             </form>
     </main>
     <footer class="flex j-c-s-b a-i-c">
@@ -138,7 +138,6 @@ This significantly improves the uniqueness of generated spun content.</span>
             <img src="img/Facebook.svg" alt="">
         </div>
     </footer>
-
     <script src="js/submit.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/dropdown.js"></script>
