@@ -17,11 +17,17 @@ a {
 .flex {
   display: flex; }
 
+.flex-1 {
+  flex: 1; }
+
 .inline-flex {
   display: inline-flex; }
 
 .block {
   display: block; }
+
+.bold {
+  font-weight: 600; }
 
 .j-c-s-b {
   justify-content: space-between; }
@@ -736,7 +742,7 @@ form.sent button[type="submit"] {
   width: 75%; }
 
 .tablet {
-  display: none; }
+  display: none !important; }
 
 .namechimp-page .colx2 .col-item {
   width: 100%; }
@@ -759,7 +765,7 @@ form.sent button[type="submit"] {
   .desktop {
     display: none !important; }
   .tablet {
-    display: block; }
+    display: block !important; }
   .timezone-col,
   .search-input {
     width: 100%; }
@@ -776,6 +782,8 @@ form.sent button[type="submit"] {
     padding: 20px 20px 5px 20px; }
     .banner-block-info-code {
       justify-content: space-between; }
+      .banner-block-info-code textarea {
+        width: 80%; }
     .banner-block-info-main {
       height: 196px; }
       .banner-block-info-main-img {
@@ -798,18 +806,31 @@ form.sent button[type="submit"] {
   .table-col-6.servers-list .table-body-col:nth-child(3),
   .table-col-6.servers-list .table-body-col:nth-child(4) {
     display: none; }
+  .table-col-6.city-table .table-head-col:nth-child(4),
+  .table-col-6.city-table .table-body-col:nth-child(4) {
+    display: none; }
   .add-new-destribution-page form {
     width: 100%; }
   .create-new-website-page .colx2 .col-item {
     width: 100%; }
   .create-new-website-page .custom-checkbox-container {
     margin-top: 0;
-    margin-bottom: 15px; }
-  .table .export-btn {
-    top: -45px; } }
+    margin-bottom: 15px; } }
 
 .table {
   position: relative; }
+  .table .even {
+    background: #f1f4f8; }
+  .table-item-content {
+    padding: 10px 40px;
+    border-bottom: 1px solid #dfe2e5; }
+    .table-item-content-info {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px; }
+      .table-item-content-info span:last-child {
+        width: 150px; }
   .table-head {
     background: #333f52;
     display: flex;
@@ -866,6 +887,19 @@ form.sent button[type="submit"] {
   .table-col-4 .table-head-col:nth-child(4),
   .table-col-4 .table-body-col:nth-child(4) {
     min-width: 200px; }
+  .table-col-4.current-paid-products .table-head-col:nth-child(1),
+  .table-col-4.current-paid-products .table-body-col:nth-child(1) {
+    width: 30%; }
+  .table-col-4.current-paid-products .table-head-col:nth-child(2),
+  .table-col-4.current-paid-products .table-body-col:nth-child(2) {
+    width: 25%;
+    min-width: 100px; }
+  .table-col-4.current-paid-products .table-head-col:nth-child(3),
+  .table-col-4.current-paid-products .table-body-col:nth-child(3) {
+    width: 30%; }
+  .table-col-4.current-paid-products .table-head-col:nth-child(4),
+  .table-col-4.current-paid-products .table-body-col:nth-child(4) {
+    min-width: 160px; }
   .table-col-4.payments-history .table-head-col:nth-child(1),
   .table-col-4.payments-history .table-body-col:nth-child(1) {
     width: 25%; }
@@ -977,9 +1011,12 @@ form.sent button[type="submit"] {
     min-width: 200px;
     display: flex;
     justify-content: space-between; }
+  .table-col-7.websites-list .table-head-col:nth-child(1),
+  .table-col-7.websites-list .table-body-col:nth-child(1) {
+    width: 50px; }
   .table-col-7.websites-list .table-head-col:nth-child(2),
   .table-col-7.websites-list .table-body-col:nth-child(2) {
-    min-width: 120px; }
+    min-width: 140px; }
   .table-col-7.websites-list .table-head-col:nth-child(3),
   .table-col-7.websites-list .table-body-col:nth-child(3) {
     min-width: 100px; }
@@ -1010,6 +1047,44 @@ form.sent button[type="submit"] {
     margin-left: 5px;
     position: relative;
     top: -3px; }
+
+.new-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .new-table thead tr {
+    background: #333f52; }
+    .new-table thead tr td {
+      padding: 11px 10px;
+      color: #fff;
+      font-size: 12px;
+      white-space: pre; }
+  .new-table tbody tr {
+    border-bottom: 1px solid #dfe2e5; }
+    .new-table tbody tr:first-child {
+      border-top: 1px solid #dfe2e5; }
+    .new-table tbody tr:nth-child(even) {
+      background: #f1f4f8; }
+    .new-table tbody tr.table-total {
+      background: none;
+      border: none; }
+      .new-table tbody tr.table-total p {
+        font-size: 18px; }
+        @media screen and (max-width: 1024px) {
+          .new-table tbody tr.table-total p {
+            font-size: 14px; } }
+    .new-table tbody tr td {
+      padding: 10px 8px;
+      min-height: 37px;
+      color: #354052;
+      font-size: 12px;
+      padding: 10px 8px;
+      max-height: 37px;
+      white-space: pre;
+      vertical-align: initial; }
+      .new-table tbody tr td.price {
+        white-space: initial; }
+  .new-table .price {
+    padding: 10px 10px 10px 10px; }
 
 footer {
   padding: 0px 5% 0px 5%;

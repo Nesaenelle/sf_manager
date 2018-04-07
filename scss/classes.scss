@@ -2,12 +2,20 @@
     display: flex;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .inline-flex {
     display: inline-flex;
 }
 
 .block {
     display: block;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 .j-c-s-b {

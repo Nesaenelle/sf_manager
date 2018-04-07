@@ -137,57 +137,45 @@
                         <div class="small-text mt-10 flex a-i-c"><i class="icon icon-info"></i>Place the code on your site for conversions and purchases of our plugin</div>
                     </div>
                 </div>
-                <div class="table table-col-6 websites-table">
-                    <div class="table-head">
-                        <div class="table-head-col">Date</div>
-                        <div class="table-head-col">Product</div>
-                        <div class="table-head-col">Term</div>
-                        <div class="table-head-col">Amount</div>
-                        <div class="table-head-col">Your 10%</div>
-                        <div class="table-head-col"></div>
-                    </div>
-                    <div class="table-body">
-                        <div class="table-body-row">
-                            <div class="table-body-col">Sep 12, 2017</div>
-                            <div class="table-body-col">Serp.farm Generator</div>
-                            <div class="table-body-col">Jan 08, 2017</div>
-                            <div class="table-body-col">$25.00</div>
-                            <div class="table-body-col">$12.90</div>
-                            <div class="table-body-col"></div>
-                        </div>
-                        <div class="table-body-row">
-                            <div class="table-body-col">Feb 15, 2017</div>
-                            <div class="table-body-col">Serp.farm Generator</div>
-                            <div class="table-body-col">Jan 08, 2018</div>
-                            <div class="table-body-col">$99.00</div>
-                            <div class="table-body-col">$9.90</div>
-                            <div class="table-body-col"></div>
-                        </div>
-                        <div class="table-body-row">
-                            <div class="table-body-col">Mar 06, 2018</div>
-                            <div class="table-body-col">Serp.farm Generator</div>
-                            <div class="table-body-col">Jan 08, 2018</div>
-                            <div class="table-body-col">$129.00</div>
-                            <div class="table-body-col">$12.90</div>
-                            <div class="table-body-col"></div>
-                        </div>
-                        <div class="table-body-row table-total">
-                            <div class="table-body-col"></div>
-                            <div class="table-body-col"></div>
-                            <div class="table-body-col"></div>
-                            <div class="table-body-col"><p>Your total affilate comission: </p>  </div>
-                            <div class="table-body-col green">$129.00 </div>
-                            <div class="table-body-col"><button class="btn btn-middle btn-light-grey ml-10" id="receive">Receive</button></div>
-                        </div>
-                    </div>
-                </div>
-<!--                 <div class="table-total">
-                    <p>Your total affilate comission:</p>
-                    <div class="flex a-i-c">
-                        <div class="green mr-20 ml-25">$35.90</div>
-                        <button class="btn btn-middle btn-light-grey ml-10" id="receive">Receive</button>
-                    </div>
-                </div> -->
+
+                <table class="new-table">
+                    <thead>       
+                        <tr>
+                            <td>Date</td>
+                            <td>Product</td>
+                            <td>Term</td>
+                            <td>Amount</td>
+                            <td class="text-right price">Your 10%</td>
+                            <td></td>
+                        </tr>                 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sep 12, 2017</td>
+                            <td>Serp.farm Generator</td>
+                            <td>Jan 08, 2017</td>
+                            <td>$25.00</td>
+                            <td class="text-right price">$12.90</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sep 12, 2017</td>
+                            <td>Serp.farm Generator</td>
+                            <td>Jan 08, 2017</td>
+                            <td>$25.00</td>
+                            <td class="text-right price">$12.90</td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-total">
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="text-right"><p>Your total affilate comission: </p>  </td>
+                            <td class="text-right green price bold">$129.00 </td>
+                            <td style="width: 110px;"><button class="btn btn-middle btn-light-grey" id="receive">Receive</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
     </main>
     <footer class="flex j-c-s-b a-i-c">
         <div class="copyright"> © Serp.farm SiteManager, 2018</div>

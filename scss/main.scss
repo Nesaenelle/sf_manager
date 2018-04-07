@@ -279,7 +279,7 @@ form {
 }
 
 .tablet {
-    display: none;
+    display: none!important;
 }
 
 .namechimp-page {
@@ -328,7 +328,7 @@ form {
         display: none!important;
     }
     .tablet {
-        display: block;
+        display: block!important;
     }
     .timezone-col,
     .search-input {
@@ -357,6 +357,9 @@ form {
         padding: 20px 20px 5px 20px;
         &-code {
             justify-content: space-between;
+            textarea {
+                width: 80%;
+            }
         }
         &-main {
             height: 196px;
@@ -411,6 +414,15 @@ form {
         }
     }
 
+    .table-col-6.city-table{
+        .table-head-col,
+        .table-body-col {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+    }
+
     .add-new-destribution-page {
         form {
             width: 100%;
@@ -426,10 +438,5 @@ form {
             margin-bottom: 15px;
         }
     }
-    
-    .table {    
-        .export-btn {
-            top: -45px;
-        }
-    }
+
 }

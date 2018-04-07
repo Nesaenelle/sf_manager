@@ -1,5 +1,21 @@
 .table {
     position: relative;
+    .even {
+        background: #f1f4f8;
+    }
+    &-item-content {
+        padding: 10px 40px;
+        border-bottom: 1px solid #dfe2e5;
+        &-info {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 20px;
+            span:last-child {
+                width: 150px;
+            }
+        }
+    }
     &-head {
         background: #333f52;
         display: flex;
@@ -49,8 +65,7 @@
             }
             &:nth-child(2) {
                 min-width: 130px;
-                display: flex;
-                // padding-right: 50px;
+                display: flex; // padding-right: 50px;
                 justify-content: space-between;
             }
         }
@@ -58,7 +73,9 @@
     &-col-3 {
         .table-head-col,
         .table-body-col {
-            &:nth-child(1), &:nth-child(3),&:nth-child(3) {
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(3) {
                 width: auto;
             }
         }
@@ -77,6 +94,24 @@
             }
             &:nth-child(4) {
                 min-width: 200px;
+            }
+        }
+        &.current-paid-products {
+            .table-head-col,
+            .table-body-col {
+                &:nth-child(1) {
+                    width: 30%;
+                }
+                &:nth-child(2) {
+                    width: 25%;
+                    min-width: 100px;
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                }
+                &:nth-child(4) {
+                    min-width: 160px;
+                }
             }
         }
         &.payments-history {
@@ -150,7 +185,7 @@
         }
         &.servers-list {
             .table-head-col,
-            .table-body-col {            
+            .table-body-col {
                 &:nth-child(1) {
                     min-width: 130px;
                 }
@@ -223,8 +258,11 @@
         &.websites-list {
             .table-head-col,
             .table-body-col {
+                &:nth-child(1) {
+                    width: 50px;
+                }
                 &:nth-child(2) {
-                    min-width: 120px;
+                    min-width: 140px;
                 }
                 &:nth-child(3) {
                     min-width: 100px;
@@ -232,7 +270,6 @@
             }
         }
     }
-
 }
 
 .export-btn {
@@ -264,5 +301,64 @@
         margin-left: 5px;
         position: relative;
         top: -3px;
+    }
+}
+
+
+
+.new-table {
+    // table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            background: #333f52;
+            td {
+                padding: 11px 10px;
+                color: #fff;
+                font-size: 12px;
+                white-space: pre;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #dfe2e5;
+
+            &:first-child {
+                border-top: 1px solid #dfe2e5;
+            }
+            &:nth-child(even) {
+                background: #f1f4f8;
+            }
+
+            &.table-total {
+                background: none;
+                border: none;
+                p {
+                    font-size: 18px;
+                    @media screen and (max-width: 1024px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            td {
+                padding: 10px 8px;
+                min-height: 37px;
+                color: #354052;
+                font-size: 12px;
+                padding: 10px 8px;
+                max-height: 37px;
+                white-space: pre;
+                vertical-align: initial;
+                &.price {
+                    white-space: initial;
+                }
+            }
+        }
+    }
+    .price {
+        padding: 10px 10px 10px 10px;
     }
 }

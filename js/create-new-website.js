@@ -14,8 +14,8 @@
 			input.classList.add('hidden');
 		} else {
 			textarea.classList.add('hidden');
-			textarea.querySelector('textarea').removeAttribute('required')
-			input.querySelector('inut').setAttribute('required', true)
+			textarea.querySelector('textarea').removeAttribute('required');
+			input.querySelector('input').setAttribute('required', true);
 			input.classList.remove('hidden');
 		}
 	}, false);
