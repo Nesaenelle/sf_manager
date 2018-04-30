@@ -16,7 +16,7 @@
             url: 'tpl/create-website.tpl',
             success: function(tpl){
                 extraTPl = tpl;
-                addListenersToControls();
+                // addListenersToControls();
             }
         });
         formMoreBtn.addEventListener('click', function() {
@@ -29,6 +29,7 @@
                 formMoreBtn.classList.add('opened');
                 formMoreBtn.innerHTML = 'Close';
                 extraFields.innerHTML = extraTPl;
+                window.SFManager.dropdownsInit();
                 addListenersToControls();
             }
             checkSubmitBtn();

@@ -5,7 +5,7 @@
             var valueBtn = btn.querySelector('.js-more-btn-opener');
             valueBtn.addEventListener('click', function() {
                 moreBtns.forEach(function(r) {
-                    toggleClass(btn);
+                    toggleClass(r);
                 });
 
             }, false);
