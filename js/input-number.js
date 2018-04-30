@@ -1,7 +1,7 @@
 (function() {
 
     var inputs = document.querySelectorAll('input[type="number"]');
-    inputs.forEach(input=>{
+    inputs.forEach(function(input) {
         input.nextElementSibling.querySelector('.input-number-plus').addEventListener('click', function() {
             input.value = +input.value + 1;
         }, false);

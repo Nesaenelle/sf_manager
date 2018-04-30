@@ -44,8 +44,8 @@
         e.preventDefault();
 
         var controls = getControls(form);
-        let focusState = false;
-        controls.forEach(control => {
+        var focusState = false;
+        controls.forEach(function(control) {
             if (control.getAttribute('required') === '' && validate(control) === false && !focusState) {
                 control.classList.add('has-error');
                 control.focus();
@@ -67,7 +67,7 @@
     }, false);
 
     function addListenersToControls () {
-        document.querySelectorAll('input').forEach(item => {
+        document.querySelectorAll('input').forEach(function(item) {
             item.addEventListener('input', function() {
                 if (validate(this)) {
                     this.setCustomValidity('');
@@ -83,7 +83,7 @@
     function checkSubmitBtn() {
         var controls = getControls(form);
         var validLength = 0;
-        controls.forEach(input => {
+        controls.forEach(function(input) {
             if (input.validity.valid) validLength++;
         });
 
@@ -104,7 +104,7 @@
     }
 
     function validate(control) {
-        let pattern = control.getAttribute('pattern');
+        var pattern = control.getAttribute('pattern');
         var reg = new RegExp(pattern);
         return pattern ? reg.test(control.value) : true;
     }

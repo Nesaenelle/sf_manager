@@ -1,10 +1,10 @@
 (function() {
     var moreBtns = document.querySelectorAll('.js-more-btn');
     if (moreBtns) {
-        moreBtns.forEach(btn => {
+        moreBtns.forEach(function(btn) {
             var valueBtn = btn.querySelector('.js-more-btn-opener');
             valueBtn.addEventListener('click', function() {
-                moreBtns.forEach(r => {
+                moreBtns.forEach(function(r) {
                     toggleClass(btn);
                 });
 
@@ -37,7 +37,7 @@
 
 
     window.addEventListener('click', function(e) {
-        moreBtns.forEach(res => {
+        moreBtns.forEach(function(res) {
             if (!res.contains(e.target)) {
                 res.classList.remove('opened');
                 if(res.querySelector('.js-more-btn-value')) res.querySelector('.js-more-btn-value').innerHTML = 'More';

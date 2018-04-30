@@ -16,14 +16,14 @@
         changePassForm.style.display = 'block';
         passwordReadonly.style.display = 'none';
         changePassForm.querySelectorAll('input')[0].focus();
-        changePassForm.querySelectorAll('input').forEach(r=> r.value = '');
+        changePassForm.querySelectorAll('input').forEach(function(r){ r.value = ''});
     }, false);
 
     passwordSubmitBtn.addEventListener('click', function(e) {
         var controls = changePassForm.querySelectorAll('input');
         var focusState = false;
 
-        controls.forEach(control => {
+        controls.forEach(function(control) {
             if (validate(control) === false && !focusState) {
                 control.classList.add('has-error');
                 control.focus();
@@ -46,7 +46,7 @@
 
     }, false);
 
-    changePassForm.querySelectorAll('input').forEach(item => {
+    changePassForm.querySelectorAll('input').forEach(function(item) {
         item.addEventListener('input', function(e) {
             e.stopPropagation();
             e.preventDefault();
@@ -66,7 +66,7 @@
 
 
     function validate(control) {
-        let pattern = control.getAttribute('pattern');
+        var pattern = control.getAttribute('pattern');
         var reg = new RegExp(pattern);
         return pattern ? reg.test(control.value) : true;
     }
