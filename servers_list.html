@@ -49,147 +49,164 @@
                 <input type="text" placeholder="Search by IP or Name">
                 <i class="input-icon icon icon-search"></i>
             </div>
-            <div class="table table-col-6 servers-list full-width">
-                <div class="table-head">
-                    <div class="table-head-col width-15">Server Name/address</div>
-                    <div class="table-head-col">Status</div>
-                    <div class="table-head-col">Indexed</div>
-                    <div class="table-head-col">RAM</div>
-                    <div class="table-head-col">Memory</div>
-                    <div class="table-head-col">Operations</div>
-                </div>
-                <div class="table-body">
-                    <div class="table-body-row">
-                        <div class="table-body-col width-15 js-expand-table-item pointer" data-id="1">sdfsfsd (192.241.182.103)</div>
-                        <div class="table-body-col flex a-i-c green"><i class="icon icon-preloader"></i>Installing</div>
-                        <div class="table-body-col">Websites added: 0 of 0</div>
-                        <div class="table-body-col">512 Mb</div>
-                        <div class="table-body-col">1.00 Gb/ 1.00 Gb</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-dark-blue btn-small">Add new site</button>
-                            <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="1">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
-                        <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
-                    </div>
-                    <div class="table-body-row even">
-                        <div class="table-body-col width-15 js-expand-table-item pointer" data-id="2">test (104.131.165.99)</div>
-                        <div class="table-body-col flex green"><i class="icon icon-check-circle-green"></i>Running</div>
-                        <div class="table-body-col">Websites added: 0 of 0</div>
-                        <div class="table-body-col">495 Mb</div>
-                        <div class="table-body-col">1.37 Gb/ 28.00 Gb</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-dark-blue btn-small">Add new site</button>
-                            <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
+            <table class="new-table servers-list">
+                <thead>
+                    <tr>
+                        <td>Server Name/address</td>
+                        <td>Status</td>
+                        <td>Indexed</td>
+                        <td>RAM</td>
+                        <td>Memory</td>
+                        <td>Operations</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="js-expand-table-item pointer" data-id="1">sdfsfsd (192.241.182.103)</td>
+                        <td>
+                            <div class="flex a-i-c green"><i class="icon icon-preloader"></i>Installing</div>
+                        </td>
+                        <td>Websites added: 0 of 0</td>
+                        <td>512 Mb</td>
+                        <td>1.00 Gb/ 1.00 Gb</td>
+                        <td class="width-15">
+                            <div class="flex a-i-c relative">
+                                <button class="btn btn-dark-blue btn-small mr-10">Add new site</button>
+                                <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="2">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
-                        <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
-                    </div>
-                    <div class="table-body-row">
-                        <div class="table-body-col width-15 js-expand-table-item pointer" data-id="3">pornohub(45.55.83.210)</div>
-                        <div class="table-body-col flex red"><i class="icon icon-circle-red"></i>Error</div>
-                        <div class="table-body-col">Websites added: 3 of 5</div>
-                        <div class="table-body-col">498 Mb</div>
-                        <div class="table-body-col">1.38 Gb/ 18.08 Gb</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-dark-blue btn-small">Add new site</button>
-                            <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
-                                </div>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">IP: 45.55.83.210</li>
-                                        <li class="table-dropdown-item">Change group</li>
-                                        <li class="table-dropdown-item">Settings</li>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
+                        </td>
+                    </tr>
+                    <tr class="js-expand-table-content table-item-content hidden" data-id="1">
+                        <td colspan="6">
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
+                            <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
+                            <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="js-expand-table-item pointer" data-id="2">test (104.131.165.99)</td>
+                        <td>
+                            <div class="flex green"><i class="icon icon-check-circle-green"></i>Running</div>
+                        </td>
+                        <td>Websites added: 0 of 0</td>
+                        <td>495 Mb</td>
+                        <td>1.37 Gb/ 28.00 Gb</td>
+                        <td class="width-15">
+                            <div class="flex a-i-c relative">
+                                <button class="btn btn-dark-blue btn-small mr-10">Add new site</button>
+                                <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="3">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
-                        <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                    <tr class="js-expand-table-content table-item-content hidden" data-id="2">
+                        <td colspan="6">
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
+                            <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
+                            <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="js-expand-table-item pointer" data-id="3">pornohub(45.55.83.210)</td>
+                        <td>
+                            <div class=" flex red"><i class="icon icon-circle-red"></i>Error</div>
+                        </td>
+                        <td>Websites added: 3 of 5</td>
+                        <td>498 Mb</td>
+                        <td>1.38 Gb/ 18.08 Gb</td>
+                        <td class="width-15">
+                            <div class="flex a-i-c relative">
+                                <button class="btn btn-dark-blue btn-small mr-10">Add new site</button>
+                                <div class="js-more-btn pointer green"><span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">IP: 45.55.83.210</li>
+                                            <li class="table-dropdown-item">Change group</li>
+                                            <li class="table-dropdown-item">Settings</li>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="js-expand-table-content table-item-content hidden" data-id="3">
+                        <td colspan="6">
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-preloader"></i>Installing</span></div>
+                            <div class="table-item-content-info small-text text"><span>Indexed</span> <span>Websites added: 0 of 0</span></div>
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span>495 Mb</span></div>
+                            <div class="table-item-content-info small-text text"><span>Memory</span> <span>1.37 Gb/ 28.00 Gb</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <a href="new_hosting.html">
                 <button class="btn btn-green mt-15">Add New Hosting Account</button>
             </a>

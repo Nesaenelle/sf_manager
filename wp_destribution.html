@@ -50,21 +50,22 @@
                 <input type="text" placeholder="Search by URL">
                 <i class="input-icon icon icon-search"></i>
             </div>
-            <div class="table table-col-3 servers-list">
-                <div class="table-head">
-                    <div class="table-head-col">Website Name</div>
-                    <div class="table-head-col">Date and Time </div>
-                    <div class="table-head-col">Operations</div>
-                </div>
-                <div class="table-body">
-                    <div class="table-body-row">
-                        <div class="table-body-col light-text">Empty</div>
-                        <div class="table-body-col"></div>
-                        <div class="table-body-col"></div>
-                    </div>
-                </div>
-                <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-            </div>
+            <table class="new-table">
+                <thead>
+                    <tr>
+                        <td>Website Name</td>
+                        <td>Date and Time</td>
+                        <td class="t-right">Operations</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="light-text">Empty</td>
+                        <td></td>
+                        <td class="t-right"></td>
+                    </tr>
+                </tbody>
+            </table>
             <a href="add_new_destribution.html">
                 <button class="btn btn-green mt-15">Add New Destribution</button>
             </a>

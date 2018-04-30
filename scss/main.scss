@@ -404,6 +404,16 @@ form {
         }
     }
 
+    .websites-list {
+        thead tr td , tbody tr td {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
     .table-col-6.servers-list {
         .table-head-col,
         .table-body-col {

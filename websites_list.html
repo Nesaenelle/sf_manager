@@ -50,209 +50,158 @@
                 <input type="text" placeholder="Search by ID or URL">
                 <i class="input-icon icon icon-search"></i>
             </div>
-            <div class="table table-col-7 websites-list full-width">
-                <div class="flex export-btn text"><i class="icon icon-download mr-20"></i>Export as CSV</div>
-                <div class="table-head">
-                    <div class="table-head-col">ID</div>
-                    <div class="table-head-col">Domain Name</div>
-                    <div class="table-head-col">Status</div>
-                    <div class="table-head-col">Indexed</div>
-                    <div class="table-head-col">Last GoogleBot visit</div>
-                    <div class="table-head-col">Visitors for today</div>
-                    <div class="table-head-col">Operations</div>
-                </div>
-                <div class="table-body">
-                    <div class="table-body-row">
-                        <div class="table-body-col">001</div>
-                        <div class="table-body-col js-expand-table-item pointer" data-id="1">singlewave.club</div>
-                        <div class="table-body-col flex a-i-c green"><i class="icon icon-check-circle-green"></i>Running</div>
-                        <div class="table-body-col">0</div>
-                        <div class="table-body-col">None</div>
-                        <div class="table-body-col">345667</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-grey btn-small">Refresh</button>
-                            <div class="js-more-btn relative">
-                                <button class="js-more-btn-opener btn btn-dark-blue btn-small flex a-i-c">Content<i class="icon icon-down-arrow white top-0"></i></button>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item flex j-c-s-b">Posts (12)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Pages (34)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Templates (2)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="js-more-btn pointer green">
-                                <span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">Edit</li>
-                                        <li class="js-sub-menu-toggle sub-menu-toggle table-dropdown-item">
-                                            Change group
-                                        </li>
-                                        <ul class="table-dropdown-sub">
-                                            <li>
-                                                <label class="checkbox mt-0" for="checkbox-1">
-                                                    <input id="checkbox-1" value="2" type="checkbox"><span class="checkbox-label">Group_test</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
+            <div class="flex export-btn text"><i class="icon icon-download mr-20"></i>Export as CSV</div>
+            <table class="new-table websites-list">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Domain Name</td>
+                        <td>Status</td>
+                        <td>Indexed</td>
+                        <td>Last GoogleBot visit</td>
+                        <td>Visitors for today</td>
+                        <td>Operations</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td class="js-expand-table-item pointer" data-id="1">singlewave.club</td>
+                        <td>
+                            <div class=" flex a-i-c green"> <i class="icon icon-check-circle-green"></i>Running</div>
+                        </td>
+                        <td>0</td>
+                        <td>None</td>
+                        <td>345667</td>
+                        <td class="width-15">
+                            <div class="flex a-i-c relative">
+                                <button class="btn btn-grey btn-small mr-10">Refresh</button>
+                                <div class="js-more-btn relative mr-10">
+                                    <button class="js-more-btn-opener btn btn-dark-blue btn-small flex a-i-c">Content<i class="icon icon-down-arrow white top-0"></i></button>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item flex j-c-s-b">Posts (12)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
-                                            <li>
-                                                <label class="checkbox" for="checkbox-2">
-                                                    <input id="checkbox-2" value="2" type="checkbox"><span class="checkbox-label">Work-group</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
+                                            <li class="table-dropdown-item flex j-c-s-b">Pages (34)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
-                                            <li>
-                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Create New Group</div>
+                                            <li class="table-dropdown-item flex j-c-s-b">Templates (2)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
                                         </ul>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="js-more-btn pointer green">
+                                    <span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">Edit</li>
+                                            <li class="js-sub-menu-toggle sub-menu-toggle table-dropdown-item">
+                                                Change group
+                                            </li>
+                                            <ul class="table-dropdown-sub">
+                                                <li>
+                                                    <label class="checkbox mt-0" for="checkbox-1">
+                                                        <input id="checkbox-1" value="2" type="checkbox"><span class="checkbox-label">Group_test</span>
+                                                        <i class="checkbox-icon"></i>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox" for="checkbox-2">
+                                                        <input id="checkbox-2" value="2" type="checkbox"><span class="checkbox-label">Work-group</span>
+                                                        <i class="checkbox-icon"></i>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Create New Group</div>
+                                                </li>
+                                            </ul>
+                                            <li class="table-dropdown-item red">Remove from list</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="1">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-check-circle-green"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Last GoogleBot visit</span> <span>17/12/18</span></div>
-                        <div class="table-item-content-info small-text text"><span>Visitors for today</span> <span>123123</span></div>
-                    </div>
-                    <div class="table-body-row">
-                        <div class="table-body-col">001</div>
-                        <div class="table-body-col js-expand-table-item pointer" data-id="2">sing.club</div>
-                        <div class="table-body-col flex green"><i class="icon icon-check-circle-green"></i>Running</div>
-                        <div class="table-body-col">0</div>
-                        <div class="table-body-col">18/01/18</div>
-                        <div class="table-body-col">33423342</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-grey btn-small">Refresh</button>
-                            <div class="js-more-btn relative">
-                                <button class="js-more-btn-opener btn btn-dark-blue btn-small flex a-i-c">Content<i class="icon icon-down-arrow white top-0"></i></button>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item flex j-c-s-b">Posts (12)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Pages (34)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Templates (2)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="js-more-btn pointer green">
-                                <span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">Edit</li>
-                                        <li class="js-sub-menu-toggle sub-menu-toggle table-dropdown-item">
-                                            Change group
-                                        </li>
-                                        <ul class="table-dropdown-sub">
-                                            <li>
-                                                <label class="checkbox mt-0" for="checkbox-3">
-                                                    <input id="checkbox-3" value="3" type="checkbox"><span class="checkbox-label">Group_test</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
+                        </td>
+                    </tr>
+                    <tr class="js-expand-table-content table-item-content hidden" data-id="1">
+                        <td colspan="7">
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-check-circle-green"></i>Installing</span></div>
+                            <div class="table-item-content-info small-text text"><span>Indexed</span> <span>0</span></div>
+                            <div class="table-item-content-info small-text text"><span>Last GoogleBot visit</span> <span>17/12/18</span></div>
+                            <div class="table-item-content-info small-text text"><span>Visitors for today</span> <span>123123</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td class="js-expand-table-item pointer" data-id="2">sing.club</td>
+                        <td>
+                            <div class="flex green"><i class="icon icon-check-circle-green"></i>Running</div>
+                        </td>
+                        <td>0</td>
+                        <td>18/01/18</td>
+                        <td>33423342</td>
+                        <td>
+                            <div class="flex a-i-c relative">
+                                <button class="btn btn-grey btn-small mr-10">Refresh</button>
+                                <div class="js-more-btn relative mr-10">
+                                    <button class="js-more-btn-opener btn btn-dark-blue btn-small flex a-i-c">Content<i class="icon icon-down-arrow white top-0"></i></button>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item flex j-c-s-b">Posts (12)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
-                                            <li>
-                                                <label class="checkbox" for="checkbox-4">
-                                                    <input id="checkbox-4" value="4" type="checkbox"><span class="checkbox-label">Work-group</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
+                                            <li class="table-dropdown-item flex j-c-s-b">Pages (34)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
-                                            <li>
-                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Create New Group</div>
+                                            <li class="table-dropdown-item flex j-c-s-b">Templates (2)
+                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
                                             </li>
                                         </ul>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="2">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-check-circle-green"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Last GoogleBot visit</span> <span>17/12/18</span></div>
-                        <div class="table-item-content-info small-text text"><span>Visitors for today</span> <span>123123</span></div>
-                    </div>
-                    <div class="table-body-row">
-                        <div class="table-body-col">001</div>
-                        <div class="table-body-col js-expand-table-item pointer" data-id="3">pornohub(45.55.83.210)</div>
-                        <div class="table-body-col flex red"><i class="icon icon-circle-red"></i>Error</div>
-                        <div class="table-body-col">0</div>
-                        <div class="table-body-col">22/11/17</div>
-                        <div class="table-body-col">0</div>
-                        <div class="table-body-col flex a-i-c relative">
-                            <button class="btn btn-grey btn-small">Refresh</button>
-                            <div class="js-more-btn relative">
-                                <button class="js-more-btn-opener btn btn-dark-blue btn-small flex a-i-c">Content<i class="icon icon-down-arrow white top-0"></i></button>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item flex j-c-s-b">Posts (12)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Pages (34)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                        <li class="table-dropdown-item flex j-c-s-b">Templates (2)
-                                            <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Add new</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="js-more-btn pointer green">
-                                <span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
-                                <div class="table-dropdown">
-                                    <ul>
-                                        <li class="table-dropdown-item">Edit</li>
-                                        <li class="js-sub-menu-toggle sub-menu-toggle table-dropdown-item">
-                                            Change group
-                                        </li>
-                                        <ul class="table-dropdown-sub">
-                                            <li>
-                                                <label class="checkbox mt-0" for="checkbox-5">
-                                                    <input id="checkbox-5" value="5" type="checkbox"><span class="checkbox-label">Group_test</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
+                                <div class="js-more-btn pointer green">
+                                    <span class="more-btn-value  js-more-btn-opener"><span class="js-more-btn-value">More</span></span>
+                                    <div class="table-dropdown">
+                                        <ul>
+                                            <li class="table-dropdown-item">Edit</li>
+                                            <li class="js-sub-menu-toggle sub-menu-toggle table-dropdown-item">
+                                                Change group
                                             </li>
-                                            <li>
-                                                <label class="checkbox" for="checkbox-6">
-                                                    <input id="checkbox-6" value="6" type="checkbox"><span class="checkbox-label">Work-group</span>
-                                                    <i class="checkbox-icon"></i>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Create New Group</div>
-                                            </li>
+                                            <ul class="table-dropdown-sub">
+                                                <li>
+                                                    <label class="checkbox mt-0" for="checkbox-3">
+                                                        <input id="checkbox-3" value="3" type="checkbox"><span class="checkbox-label">Group_test</span>
+                                                        <i class="checkbox-icon"></i>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox" for="checkbox-4">
+                                                        <input id="checkbox-4" value="4" type="checkbox"><span class="checkbox-label">Work-group</span>
+                                                        <i class="checkbox-icon"></i>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <div class="green small-text flex pointer"><i class="icon icon-plus"></i>Create New Group</div>
+                                                </li>
+                                            </ul>
+                                            <li class="table-dropdown-item red">Remove from list</li>
                                         </ul>
-                                        <li class="table-dropdown-item red">Remove from list</li>
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <div class="close-btn pointer" id="close-more-banners">Close<i class="icon icon-up-arrow"></i></div> -->
-                        </div>
-                    </div>
-                    <div class="js-expand-table-content table-item-content hidden" data-id="3">
-                        <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-check-circle-green"></i>Installing</span></div>
-                        <div class="table-item-content-info small-text text"><span>Indexed</span> <span>0</span></div>
-                        <div class="table-item-content-info small-text text"><span>Last GoogleBot visit</span> <span>17/12/18</span></div>
-                        <div class="table-item-content-info small-text text"><span>Visitors for today</span> <span>123123</span></div>
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                    <tr class="js-expand-table-content table-item-content hidden" data-id="2">
+                        <td colspan="7">
+                            <div class="table-item-content-info small-text text"><span>Status</span> <span class="green flex"><i class="icon icon-check-circle-green"></i>Installing</span></div>
+                            <div class="table-item-content-info small-text text"><span>Indexed</span> <span>0</span></div>
+                            <div class="table-item-content-info small-text text"><span>Last GoogleBot visit</span> <span>17/12/18</span></div>
+                            <div class="table-item-content-info small-text text"><span>Visitors for today</span> <span>123123</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <div class="flex">
                 <a href="create_new_website.html">
                     <button class="btn btn-green mt-15 mr-10">Create New Website</button>

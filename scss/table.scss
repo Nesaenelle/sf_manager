@@ -344,13 +344,13 @@
             }
 
             td {
-                padding: 10px 8px;
+                padding: 10px 11px;
                 min-height: 37px;
                 color: #354052;
                 font-size: 12px;
                 padding: 10px 8px;
                 max-height: 37px;
-                white-space: pre;
+                // white-space: pre;
                 vertical-align: initial;
                 &.price {
                     white-space: initial;

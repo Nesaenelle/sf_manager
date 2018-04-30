@@ -63,8 +63,14 @@ a {
 .text-left {
   text-align: left !important; }
 
+.t-right {
+  text-align: right; }
+
 .text-right {
   text-align: right !important; }
+
+.nowrap {
+  white-space: nowrap; }
 
 /* MARGINS */
 .mt-0 {
@@ -802,6 +808,8 @@ form.sent button[type="submit"] {
   .table-col-7.websites-list .table-body-col:nth-child(5),
   .table-col-7.websites-list .table-body-col:nth-child(6) {
     display: none; }
+  .websites-list thead tr td:nth-child(4), .websites-list thead tr td:nth-child(5), .websites-list thead tr td:nth-child(6), .websites-list tbody tr td:nth-child(4), .websites-list tbody tr td:nth-child(5), .websites-list tbody tr td:nth-child(6) {
+    display: none; }
   .table-col-6.servers-list .table-head-col:nth-child(3), .table-col-6.servers-list .table-head-col:nth-child(4),
   .table-col-6.servers-list .table-body-col:nth-child(3),
   .table-col-6.servers-list .table-body-col:nth-child(4) {
@@ -1073,13 +1081,12 @@ form.sent button[type="submit"] {
           .new-table tbody tr.table-total p {
             font-size: 14px; } }
     .new-table tbody tr td {
-      padding: 10px 8px;
+      padding: 10px 11px;
       min-height: 37px;
       color: #354052;
       font-size: 12px;
       padding: 10px 8px;
       max-height: 37px;
-      white-space: pre;
       vertical-align: initial; }
       .new-table tbody tr td.price {
         white-space: initial; }
