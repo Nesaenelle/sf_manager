@@ -313,6 +313,9 @@ form {
 /* MOBILES */
 
 @media screen and (max-width: 1024px) {
+    .table-item-content {
+        display: block;
+    }
     header {
 
         .header-menu {
