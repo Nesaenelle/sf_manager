@@ -1034,7 +1034,7 @@ form.sent button[type="submit"] {
 /* MOBILES */
 @media screen and (max-width: 1024px) {
   .table-item-content {
-    display: block; }
+    display: table-row; }
   header .header-menu-item.profile-link.active {
     border-bottom: none; }
   header .header-menu .profile-link {
