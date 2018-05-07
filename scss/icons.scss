@@ -10,6 +10,13 @@
         margin-right: 5px;
         min-width: 16px;
     }
+    &-info-black {
+        background: url(img/info-black.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        min-width: 16px;
+    }
     &-search {
         background: url(img/search.svg);
         width: 16px;
@@ -112,6 +119,12 @@
     }
     &-plus {
         background-image: url(img/plus_circle.svg);
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    &-flag {
+        background-image: url(img2/key.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;

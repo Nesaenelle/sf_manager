@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Event Log</title>
+    <title>Add new post</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400, 500, 600,700" rel="stylesheet">
@@ -31,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <main class="flex create-new-website-page">
+    <main class="flex">
         <aside>
             <ul>
                 <li class="active"><a href="websites_list.html">Websites List</a></li>
@@ -43,26 +43,13 @@
             <div class="breadcrumbs">
                 <div class="breadcrumbs-item"><a href="">Home</a></div>
                 <div class="breadcrumbs-item"><a href="">Websites</a></div>
-                <div class="breadcrumbs-item"><a href="">singlewave.club</a></div>
-                <div class="breadcrumbs-item active"><a href="">Event Log</a></div>
+                <div class="breadcrumbs-item"><a href="">Websites_1</a></div>
+                <div class="breadcrumbs-item"><a href="">Posts</a></div>
+                <div class="breadcrumbs-item active"><a href="">Add new post</a></div>
             </div>
-            <h1 class="main-title mt-15">Event Log / singlewave.club</h1>
-            <div class="log-list">
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: mkfifo /tmp/sm3230373135343232353235-ssh-pipe</div>
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: connected to host</div>
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: session run under root user</div>
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: distro ubuntu ,version 16, archive ubuntu-16.tar.gz</div>
-                <div class="log-list__item red"><i class="icon icon-circle-red"></i>WARNING: userdel www: userdel: user 'www' does not exist</div>
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: adduser --home /usr/share/nginx/html/ --quiet --disabled-password --gecos USER FOR WORDPRESS www</div>
-                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: tar -xzvf wp-conf.tar.gz</div>
-                <div class="log-list__item green"><i class="icon icon-check-circle-green"></i>SUCCESS: all operations done</div>
-            </div>
-            <a href="edit_singlewave.html">
-                <button class="btn btn-green mr-15">Back on website</button>
-            </a>
-            <a href="edit_singlewave.html">
-                <button class="btn btn-dark-grey">Edit website</button>
-            </a>
+            <h1 class="main-title">Add new post</h1>
+            <p>Краткое описание о том, что тут список "сборок", собранных планином Duplicator (+ ссылка на него). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+            <button class="btn btn-green mt-15 mr-10">Save and Upload</button>
         </div>
     </main>
     <footer class="flex j-c-s-b a-i-c">
@@ -78,7 +65,9 @@
             <img src="img/Facebook.svg" alt="">
         </div>
     </footer>
-
+    <script src="js/more-switcher.js"></script>
+    <script src="js/table-expander.js"></script>
+    <script src="js/table-actions.js"></script>
 </body>
 
 </html>

@@ -46,24 +46,18 @@
                 <div class="breadcrumbs-item active"><a href="">Event Log</a></div>
             </div>
             <h1 class="main-title mt-15">Event Log / 192.241.182.103</h1>
-            <i></i>OK: mkfifo /tmp/sm3230373135343232353235-ssh-pipe
-            <br>
-            <i></i>OK: connected to host
-            <br>
-            <i></i>OK: session run under root user
-            <br>
-            <i></i>OK: distro ubuntu ,version 16, archive ubuntu-16.tar.gz
-            <br>
-            <i></i>WARNING: userdel www: userdel: user 'www' does not exist
-            <br>
-            <i></i>OK: adduser --home /usr/share/nginx/html/ --quiet --disabled-password --gecos USER FOR WORDPRESS www
-            <br>
-            <i></i>OK: tar -xzvf wp-conf.tar.gz
-            <br>
-            <i></i>SUCCESS: all operations done
-            <br>
-            <a href="servers_list.html">
-                <button class="btn btn-green">Back on Server</button>
+            <div class="log-list">
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: mkfifo /tmp/sm3230373135343232353235-ssh-pipe</div>
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: connected to host</div>
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: session run under root user</div>
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: distro ubuntu ,version 16, archive ubuntu-16.tar.gz</div>
+                <div class="log-list__item red"><i class="icon icon-circle-red"></i>WARNING: userdel www: userdel: user 'www' does not exist</div>
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: adduser --home /usr/share/nginx/html/ --quiet --disabled-password --gecos USER FOR WORDPRESS www</div>
+                <div class="log-list__item"><i class="icon icon-info-black"></i>OK: tar -xzvf wp-conf.tar.gz</div>
+                <div class="log-list__item green"><i class="icon icon-check-circle-green"></i>SUCCESS: all operations done</div>
+            </div>
+            <a href="edit_singlewave.html">
+                <button class="btn btn-green mr-15">Back on server</button>
             </a>
         </div>
     </main>
@@ -80,11 +74,6 @@
             <img src="img/Facebook.svg" alt="">
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/submit.js"></script>
-    <script src="js/notifications.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/create-new-website.js"></script>
 </body>
 
 </html>

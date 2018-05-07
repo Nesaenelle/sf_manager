@@ -52,9 +52,15 @@
             </div>
             <div class="relative">
                 <div class="flex export-btn text"><i class="icon icon-download mr-20"></i>Export as CSV</div>
-                <table class="new-table websites-list">
+                <table class="new-table websites-list js-table-actions">
                     <thead>
                         <tr>
+                            <td>
+                                <label class="checkbox" data-table-checkbox="true">
+                                    <input value="1" type="checkbox" data-main-checkbox="true">
+                                    <i class="checkbox-icon"></i>
+                                </label>
+                            </td>
                             <td>ID</td>
                             <td>Domain Name</td>
                             <td>Status</td>
@@ -66,6 +72,12 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <label class="checkbox" data-table-checkbox="true">
+                                    <input value="2" type="checkbox">
+                                    <i class="checkbox-icon"></i>
+                                </label>
+                            </td>
                             <td>001</td>
                             <td class="js-expand-table-item pointer" data-id="1">singlewave.club</td>
                             <td>
@@ -134,6 +146,12 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <label class="checkbox" data-table-checkbox="true">
+                                    <input value="3" type="checkbox">
+                                    <i class="checkbox-icon"></i>
+                                </label>
+                            </td>
                             <td>001</td>
                             <td class="js-expand-table-item pointer" data-id="2">sing.club</td>
                             <td>
@@ -203,14 +221,26 @@
                         </tr>
                     </tbody>
                 </table>
+                <!--container for new groups start-->
+                <div id="groups-container" class="mt-20">
+                    
+                </div>
+                <!--container for new groups end-->
+                <div class="pagination">
+                    <div class="pagination__prev"></div>
+                    <div class="pagination__item active">1</div>
+                    <div class="pagination__item">2</div>
+                    <div class="pagination__item">3</div>
+                    <div class="pagination__next"></div>
+                </div>
             </div>
             <div class="flex">
                 <a href="create_new_website.html">
                     <button class="btn btn-green mt-15 mr-10">Create New Website</button>
                 </a>
-                <div class="js-more-btn relative">
-                    <button class="js-more-btn-opener btn btn-dark-blue mt-15 mr-10">Create New Group</button>
-                    <div class="table-dropdown mt-20">
+                <div class="relative">
+                    <button class="btn btn-dark-blue mt-15 mr-10"  id="create-new-group">Create New Group</button>
+<!--                     <div class="table-dropdown mt-20">
                         <ul>
                             <li class="table-dropdown-item">Group_test</li>
                             <li class="table-dropdown-item">Any group_1</li>
@@ -222,9 +252,9 @@
                                 <input type="text" placeholder="type here">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <button class="js-delete-sellected  btn btn-dark-blue mt-15">Delete selected sities</button>
+                <button class="js-delete-sellected  btn btn-dark-blue mt-15 hidden" id="delete-btn">Delete selected sities</button>
             </div>
     </main>
     <footer class="flex j-c-s-b a-i-c">
@@ -242,6 +272,7 @@
     </footer>
     <script src="js/more-switcher.js"></script>
     <script src="js/table-expander.js"></script>
+    <script src="js/table-actions.js"></script>
 </body>
 
 </html>
