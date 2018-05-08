@@ -1,5 +1,5 @@
 .flex {
-    display: flex;
+    display: flex!important;
 }
 
 .flex-1 {
@@ -12,6 +12,10 @@
 
 .block {
     display: block;
+}
+
+.inline-block {
+    display: inline-block!important;
 }
 
 .bold {
@@ -36,6 +40,16 @@
 
 .pointer {
     cursor: pointer;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .colx2 {

@@ -17,6 +17,14 @@
         margin-right: 5px;
         min-width: 16px;
     }
+    &-info-dark {
+        background: url(img/info-dark.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        min-width: 16px;
+    }
+    
     &-search {
         background: url(img/search.svg);
         width: 16px;
@@ -93,40 +101,52 @@
         margin-right: 5px;
     }
     &-preloader {
-        background-image: url(img/inst.gif);
+        background: url(img/inst.gif);
         background-size: cover!important;
         width: 18px;
         height: 18px;
         margin-right: 5px;
     }
     &-download {
-        background-image: url(img/download.svg);
+        background: url(img/download.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;
     }
     &-download-grey {
-        background-image: url(img/download-grey.svg);
+        background: url(img/download-grey.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;
     }
     &-download-white {
-        background-image: url(img/download-white.svg);
+        background: url(img/download-white.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;
     }
     &-plus {
-        background-image: url(img/plus_circle.svg);
+        background: url(img/plus_circle.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;
     }
     &-flag {
-        background-image: url(img2/key.svg);
+        background: url(img2/flag.png) no-repeat;
+        width: 10px;
+        height: 11px;
+        margin-right: 5px;
+    }
+    &-visit-site {
+        background: url(img2/site.svg);
         width: 16px;
         height: 16px;
         margin-right: 5px;
+    }
+    &-wp-admin {
+       background: url(img2/wp.svg);
+       width: 16px;
+       height: 14px;
+       margin-right: 5px; 
     }
 }

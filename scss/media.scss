@@ -1,0 +1,162 @@
+/* MOBILES */
+
+@media screen and (max-width: 1024px) {
+    .table-item-content {
+        display: table-row;
+    }
+    header {
+
+        .header-menu {
+            &-item.profile-link.active {
+                border-bottom: none;
+            }
+            .profile-link {
+                font-size: 0;
+            }
+        }
+    }
+    .desktop {
+        display: none!important;
+    }
+    .tablet {
+        display: block!important;
+    }
+    .timezone-col,
+    .search-input {
+        width: 100%;
+    }
+
+    main {
+        padding: 10px 0;
+        .main-content {
+            width: 75%;
+            padding: 0 10px 0 20px;
+        }
+    }
+
+    .change-password-form {
+        .colx2 .col-item {
+            width: 75%;
+        }
+    }
+
+    .banner-block-buttons {
+        padding: 0px 20px 0px 30px;
+    }
+
+    .banner-block-info {
+        padding: 20px 20px 5px 20px;
+        &-code {
+            justify-content: space-between;
+            textarea {
+                width: 80%;
+            }
+        }
+        &-main {
+            height: 196px;
+            &-img {
+                height: 160px;
+                width: 160px;
+            }
+        }
+    }
+
+    .spin-rewriter-page {
+        .colx2 .col-item {
+            width: 75%;
+        }
+    }
+    .articleforce-page {
+        .colx2 .col-item {
+            width: 70%;
+        }
+    }
+
+    .namechimp-page {
+        .colx2 .col-item {
+            width: 70%;
+        }
+    }
+
+    .new-hosting-page {
+        .colx2 .col-item {
+            width: 100%;
+        }
+    }
+
+    .table-col-7.websites-list {
+        .table-head-col,
+        .table-body-col {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
+    .websites-list {
+        thead tr td,
+        tbody tr td {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
+    .table-col-6.servers-list {
+        .table-head-col,
+        .table-body-col {
+            &:nth-child(3),
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+    }
+
+    .table-col-6.city-table {
+        .table-head-col,
+        .table-body-col {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+    }
+
+    .add-new-destribution-page {
+        form {
+            width: 100%;
+        }
+    }
+
+    .create-new-website-page {
+        .colx2 .col-item {
+            width: 100%;
+        }
+        .custom-checkbox-container {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .post {
+        display: block;
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            margin-top: 30px;
+            width: 100%;
+        }
+        &__accordion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__item {
+                width: 48%;
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@
         dropdownsInit: dropdownsInit
     };
 
-    var dropdowns;;
+    var dropdowns;
 
     dropdownsInit();
 

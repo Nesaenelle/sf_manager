@@ -355,16 +355,45 @@
                 color: #354052;
                 font-size: 12px;
                 padding: 10px 8px;
-                max-height: 37px; // white-space: pre;
+                max-height: 37px;
                 vertical-align: initial;
                 &.price {
                     white-space: initial;
+                }
+                &:hover {
+                    .new-table__hidden-menu {
+                        display: block;
+                    }
                 }
             }
         }
     }
     .price {
         padding: 10px 10px 10px 10px;
+    }
+    &__hidden-menu {
+        position: absolute;
+        margin-left: -50px;
+        display: none;
+    }
+    &__group-name {
+        font-size: 18px!important;
+        font-weight: 600;
+        color: #354052;
+    
+        display: block;
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__group-actions {
+        font-size: 14px!important;
+        font-weight: 600;
+        span {
+            cursor: pointer;
+            margin-right: 18px;
+        }
     }
     .checkbox {
         &[data-table-checkbox] {

@@ -47,72 +47,112 @@
             </div>
             <h1 class="main-title mt-15">Edit singlewave.club</h1>
             <div class="notification" id="notification-1">
-                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>New site was created!</span>
+                <span class="flex a-i-c"><i class="icon icon-check-circle-white mr-15"></i>Site was updated!</span>
                 <img class="notification-close" class="notification-close" src="img/close.svg" alt="">
             </div>
-            <form class="mt-20" action="" id="form">
-                <div class="site-name-block">
-                    <div></div>
-                    <div>
-                        <span><i class=""></i></span>
-                        <span><i class=""></i>WP Admin</span>
-                    </div>
+            <div class="site-name-block">
+                <div class="site-name-block__name">singlewave.club</div>
+                <div class="site-name-block__buttons">
+                    <a href="" class="site-name-block__buttons__link"><i class="icon icon-visit-site"></i>visit website</a>
+                    <a href="" class="site-name-block__buttons__link"><i class="icon icon-wp-admin"></i>WP Admin</a>
                 </div>
-                        
-                    <label class="label" for="">Status <div class="log-list__item green"><i class="icon icon-check-circle-green"></i>Running</div></label>
-                    
-                    <div class="col-item">
-                        <label class="label" for="">Group</label>
-                        <div class="dropdown mb-15">
-                            <div class="dropdown-value">Group_1_test</div>
-                            <div class="dropdown-list">
-                                <div class="js-dropdown-item dropdown-list-item">Server_TEST_1</div>
-                                <div class="js-dropdown-item dropdown-list-item">Server_Work_1</div>
-                                <div class="js-dropdown-item dropdown-list-item">Server_John_33764</div>
-                                <a href="new_hosting.html">
-                                    <div class="dropdown-list-item new-server">Create a New Server</div>
-                                </a>
-                            </div>
-                        </div>
-                        <label class="label" for="">Login</label>
-                        <div class="input mb-15" id="input">
-                            <input required type="text" placeholder="Admin" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" title="Invalid domain name">
-                        </div>
-                        <label class="label" for="">Password</label>
-                        <div class="input mb-15" id="input">
-                            <input required type="text" placeholder="q6f04HzuJLhyXcWGpg" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" title="Invalid domain name">
-                        </div>
-                        <label class="label" for="">Email</label>
-                        <div class="input mb-15" id="input">
-                            <input required type="text" placeholder="support@serp.farm" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" title="Invalid domain name">
-                        </div>
-                        <label class="label" for="">Server</label>
-                        <div class="dropdown mb-15">
-                            <div class="dropdown-value">Server_1_test</div>
-                            <div class="dropdown-list">
-                                <div class="js-dropdown-item dropdown-list-item">Server_TEST_1</div>
-                                <div class="js-dropdown-item dropdown-list-item">Server_Work_1</div>
-                                <div class="js-dropdown-item dropdown-list-item">Server_John_33764</div>
-                                <a href="new_hosting.html">
-                                    <div class="dropdown-list-item new-server">Create a New Server</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-            </form>
-            <div>
-                <p>Date Added</p>
-                <p>Mar 12 2018, 18:49 pm</p>
-                <button class="btn btn-dark-grey">Update</button>
             </div>
-            <div class="text-right">
-                <a href="websites_list.html">
-                    <button class="btn btn-green mt-10 ml-20" type="submit">Back on Websites List</button>
-                </a>
-                <a href="event_log.html">
-                    <button id="submit-btn" class="btn btn-dark-grey mt-10 ml-20" type="submit">Event Log</button>
-                </a>
+            <div class="site-content">
+                <div class="site-content__left">
+                    <form class="mt-20" action="" id="form">
+                        <div class="label flex mt-30 mb-10">
+                            <span class="mr-30">Status</span>
+                            <div class="log-list__item green"><i class="icon icon-check-circle-green"></i>Running</div>
+                        </div>
+                        <div class="col-item">
+                            <label class="label" for="">Group</label>
+                            <div class="dropdown mb-15">
+                                <div class="dropdown-value dirty">Group_1_test</div>
+                                <div class="dropdown-list">
+                                    <div class="js-dropdown-item dropdown-list-item">Server_TEST_1</div>
+                                    <div class="js-dropdown-item dropdown-list-item">Server_Work_1</div>
+                                    <div class="js-dropdown-item dropdown-list-item">Server_John_33764</div>
+                                    <a href="new_hosting.html">
+                                        <div class="dropdown-list-item new-server">Create a New Server</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <label class="label" for="">Login</label>
+                            <div class="input mb-15" id="input">
+                                <input required type="text" placeholder="Admin" pattern="^[A-Za-z0-9]+$" title="Invalid domain name">
+                            </div>
+                            <label class="label" for="">Password</label>
+                            <div class="input mb-15" id="input">
+                                <input required type="text" placeholder="q6f04HzuJLhyXcWGpg" pattern="^[A-Za-z0-9@%^&*]+$" title="Invalid domain name">
+                            </div>
+                            <label class="label" for="">Email</label>
+                            <div class="input mb-15" id="input">
+                                <input required type="text" placeholder="support@serp.farm" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="Invalid domain name">
+                            </div>
+                            <label class="label" for="">Server</label>
+                            <div class="dropdown mb-15">
+                                <div class="dropdown-value dirty">Server_1_test</div>
+                                <div class="dropdown-list">
+                                    <div class="js-dropdown-item dropdown-list-item">Server_TEST_1</div>
+                                    <div class="js-dropdown-item dropdown-list-item">Server_Work_1</div>
+                                    <div class="js-dropdown-item dropdown-list-item">Server_John_33764</div>
+                                    <a href="new_hosting.html">
+                                        <div class="dropdown-list-item new-server">Create a New Server</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex j-c-s-b a-i-c mt-20">
+                            <div>
+                                <span class="label inline-block mr-30">Date Added</span>
+                                <span class="text bold medium-text">Mar 12 2018, 18:49 pm</span>
+                            </div>
+                            <button class="btn btn-light-grey" id="submit-btn" >Update</button>
+                        </div>
+                        <div class="mt-20">
+                            <a href="websites_list.html">
+                                <button class="btn btn-green mt-10" type="button">Back on Websites List</button>
+                            </a>
+                            <a href="event_log.html">
+                                <button class="btn btn-dark-grey mt-10 ml-20" type="button">Event Log</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="site-content__right">
+                    <table class="new-table mt-30">
+                        <thead>
+                            <tr>
+                                <td>Content</td>
+                                <td>Quantity</td>
+                                <td>Add</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Posts</td>
+                                <td>0</td>
+                                <td>
+                                    <a href="post_create.html" class="flex nowrap green"><i class="icon icon-plus"></i>new post</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pages</td>
+                                <td>0</td>
+                                <td class="green">
+                                    <a href="" class="flex nowrap green"><i class="icon icon-plus"></i>new page</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Templates</td>
+                                <td>4</td>
+                                <td class="green width-25">
+                                    <a href="" class="flex nowrap green"><i class="icon icon-plus"></i>new template</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
     </main>
     <footer class="flex j-c-s-b a-i-c">
@@ -132,7 +172,6 @@
     <script src="js/submit.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/dropdown.js"></script>
-    <script src="js/create-new-website.js"></script>
 </body>
 
 </html>

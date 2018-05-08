@@ -1,0 +1,14 @@
+.site-content {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        width: 55%;
+    }
+    &__right {
+        width: 43%;
+    }
+    .new-table {
+        border-left: 1px solid #dfe2e5;
+        border-right: 1px solid #dfe2e5;
+    }
+}
