@@ -1542,6 +1542,8 @@ textarea {
     color: #354052;
     font-weight: 600;
     font-size: 14px; }
+    .table-dropdown-item a {
+      display: block; }
     .table-dropdown-item:hover {
       background: #dfe3e9; }
     .table-dropdown-item:last-child {

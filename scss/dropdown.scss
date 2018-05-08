@@ -141,6 +141,9 @@
         color: #354052;
         font-weight: 600;
         font-size: 14px;
+        a {
+            display: block;
+        }
         &:hover {
             background: #dfe3e9;
         }
