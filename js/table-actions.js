@@ -76,7 +76,23 @@
                 }, false);
 
                 tpl.querySelector('.js-rename-group').addEventListener('click', function() {
-                    tpl.querySelector('.new-table__group-name').setAttribute('contenteditable', true);
+                    var renameBtn = this;
+                    var nameEl = tpl.querySelector('.new-table__group-name');
+
+                    var input = document.createElement('div');
+                    input.style.cssText = 'position: absolute;top: 4px; width: 400px;display:flex;';
+                    input.innerHTML = '<div class="input full-width" style="margin: 0"><input type="text" value="' + nameEl.innerHTML + '"></div> <button class="btn btn-green ml-10">Save</button>';
+                    nameEl.parentNode.insertBefore(input, nameEl);
+                    nameEl.classList.add('hidden');
+
+                    renameBtn.classList.add('hidden');
+
+                    nameEl.parentNode.querySelector('.btn').addEventListener('click', function() {
+                        nameEl.classList.remove('hidden');
+                        nameEl.innerHTML = nameEl.parentNode.querySelector('input').value;
+                        renameBtn.classList.remove('hidden');
+                        input.remove();
+                    }, false);
                 }, false);
             }
 
@@ -105,6 +121,6 @@
             window.SFManager.closest(this, 'tr').remove();
         }, false);
     });
-    
+
 
 }());
