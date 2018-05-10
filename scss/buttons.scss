@@ -82,11 +82,15 @@
 }
 
 .calendar-btn {
-    background: url(../img/search.svg) center no-repeat;
+
     width: 46px;
     height: 26px;
     border-radius: 3px;
     background-color: #f6f6f6;
     border: solid 1px #cecece;
     cursor: pointer;
+    .icon {
+        @include absolute-center;
+        top: -2px;
+    }
 }

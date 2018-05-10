@@ -530,13 +530,20 @@ a {
     color: #000; }
 
 .calendar-btn {
-  background: url(../img/search.svg) center no-repeat;
   width: 46px;
   height: 26px;
   border-radius: 3px;
   background-color: #f6f6f6;
   border: solid 1px #cecece;
   cursor: pointer; }
+  .calendar-btn .icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    top: -2px; }
 
 header {
   height: 70px;
@@ -1742,6 +1749,24 @@ textarea {
     background: url(img2/wp.svg);
     width: 16px;
     height: 14px;
+    margin-right: 5px; }
+  .icon-eye {
+    background: url(img2/eye-open.svg);
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+    margin-right: 5px; }
+  .icon-key {
+    background: url(img2/house-key.svg);
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+    margin-right: 5px; }
+  .icon-calendar {
+    background: url(img2/calendar.svg);
+    background-size: cover;
+    width: 17px;
+    height: 17px;
     margin-right: 5px; }
 
 .modal {
